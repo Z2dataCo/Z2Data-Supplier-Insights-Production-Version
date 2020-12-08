@@ -1,6 +1,5 @@
 package com.SI.Supplier_Insights;
 
-import com.codeborne.selenide.SelenideElement;
 import com.shaft.gui.browser.BrowserActions;
 import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
@@ -8,9 +7,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$x;
 
 public class Login_Page {
     private WebDriver driver;
@@ -39,8 +35,7 @@ public class Login_Page {
         ElementActions.type(driver, Input_Text_Box, "m.sultan@z2data.com");
         ElementActions.type(driver, Input_Pass, "M.sultan@z2data.com");
         ElementActions.click(driver, SignIn_Btn);
-        WebDriverWait WebWait = new WebDriverWait(driver, 90);
-        WebWait.until(ExpectedConditions.titleIs("Z2DATA"));
+
 
     }
 }

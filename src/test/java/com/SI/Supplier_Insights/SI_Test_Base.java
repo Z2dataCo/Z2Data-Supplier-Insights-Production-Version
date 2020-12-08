@@ -29,11 +29,9 @@ public class SI_Test_Base {
     @BeforeSuite
     public void StartDriver() {
         driver = BrowserFactory.getBrowser(BrowserFactory.BrowserType.GOOGLE_CHROME);
-        BrowserActions.navigateToURL(driver,"https://suppliers.z2data.com/");
+        BrowserActions.navigateToURL(driver, "https://suppliers.z2data.com/");
         login();
     }
-
-
 
     public static void Switch_Tabs() {
         ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
@@ -44,7 +42,7 @@ public class SI_Test_Base {
 
     public static void login() {
         Login_Page Login_Obj = new Login_Page(driver);
-        Login_Obj.Z2D_SignIn( );
+        Login_Obj.Z2D_SignIn();
     }
 
     public static void WaitAllElement() {
