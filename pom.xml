@@ -14,6 +14,42 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <aspectj.version>1.9.6</aspectj.version>
         <allure.version>2.13.6</allure.version>
+        <selenium.version>4.0.0-alpha-6</selenium.version>
+        <appium-selenium.version>3.141.59</appium-selenium.version>
+        <appium-java-client.version>7.4.0</appium-java-client.version>
+        <webdrivermanager.version>4.2.2</webdrivermanager.version>
+        <allure-testng.version>2.13.7</allure-testng.version> <!-- UPDATE internal.properties -->
+        <aspectj.version>1.9.6</aspectj.version> <!-- 1.9.5 DO NOT UPDATE (Search and replace) -->
+        <rest-assured.version>4.3.2</rest-assured.version>
+        <json-simple.version>1.1.1</json-simple.version>
+        <skyscreamer-jsonassert.version>1.5.0</skyscreamer-jsonassert.version>
+        <mime-util.version>2.1.3</mime-util.version>
+        <testng.version>7.3.0</testng.version>
+        <mysql-connector-java.version>8.0.22</mysql-connector-java.version>
+        <mssql-jdbc.version>8.4.1.jre14</mssql-jdbc.version>
+        <postgresql.version>9.1-901-1.jdbc4</postgresql.version>
+        <!-- <ojdbc8.version>19.3.0.0</ojdbc8.version> -->
+        <apachepoi.version>4.1.2</apachepoi.version>
+        <org.slf4j.version>1.7.30</org.slf4j.version>
+        <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
+        <maven-shade-plugin.version>3.2.1</maven-shade-plugin.version>
+        <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
+        <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
+        <maven-scm-publish-plugin.version>3.0.0</maven-scm-publish-plugin.version>
+        <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
+        <jcraft-jsch.version>0.1.55</jcraft-jsch.version>
+        <cucumber.version>6.9.0</cucumber.version>
+        <cverges-expect4j.version>1.9</cverges-expect4j.version>
+        <openpnp-opencv.version>4.3.0-2</openpnp-opencv.version>
+        <applitools-eyes.version>4.14.0</applitools-eyes.version>
+        <sikuixapi.version>2.0.4</sikuixapi.version>
+        <jave-all-deps.version>3.0.1</jave-all-deps.version>
+        <video-recorder-testng.version>2.0</video-recorder-testng.version>
+        <!-- Build Commands-->
+        <installToLocalRepository>mvn clean install -DskipTests</installToLocalRepository>
+        <publishJavaDocs>mvn resources:resources javadoc:javadoc scm-publish:publish-scm</publishJavaDocs>
     </properties>
 
     <dependencies>
@@ -45,7 +81,7 @@
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>4.2.0</version>
+            <version>4.2.2</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
@@ -62,15 +98,15 @@
     </dependencies>
     <build>
         <plugins>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
+                <version>3.0.0-M5</version>
                 <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
-                    <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    </argLine>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng_Chrome.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                     <systemProperties>
                         <property>
                             <name>allure.results.directory</name>
@@ -84,7 +120,17 @@
                         <artifactId>aspectjweaver</artifactId>
                         <version>${aspectj.version}</version>
                     </dependency>
+                    <dependency>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>3.0.0-M5</version>
+                    </dependency>
                 </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
             </plugin>
             <plugin>
                 <groupId>io.qameta.allure</groupId>
