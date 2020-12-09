@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Supplier Insights" target="15" />
+      <module name="Supplier Insights" target="14" />
     </bytecodeTargetLevel>
   </component>
 </project>

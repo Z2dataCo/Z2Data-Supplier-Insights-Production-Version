@@ -13,7 +13,7 @@ public class CommonPage {
 
     public By MySupplier = By.id("aMySuppliers");
     public By Browser = By.xpath("//li[@style='position:relative;']");
-    public By BrowserByIndustry= By.xpath("//a[@Class='d-flex align-items-center px-1 py-2 closeChild'][1]");
+    public By BrowserByIndustry = By.xpath("//a[@Class='d-flex align-items-center px-1 py-2 closeChild'][1]");
     public By AdvancedSearch = By.linkText("Advanced Search");
     public By Compare = By.id("comparecur");
 
@@ -21,19 +21,22 @@ public class CommonPage {
     public void OpenMySupplier() {
         ElementActions.click(driver, MySupplier);
     }
+
     public void OpenBrowserTap() {
         ElementActions.click(driver, Browser);
     }
 
-    public void OpenAdvancedSearchTap(){
-        ElementActions.click(driver,AdvancedSearch);
+    public void OpenAdvancedSearchTap() {
+        ElementActions.click(driver, AdvancedSearch);
     }
 
-    public void OpenCompareTap(){
-        ElementActions.click(driver,Compare);
+    public void OpenCompareTap() {
+        ElementActions.click(driver, Compare);
     }
 
-    public void OpenBrowserByindustry(){
-        ElementActions.click(driver,BrowserByIndustry);
+    public void OpenBrowserByindustry() {
+        ElementActions.click(driver, BrowserByIndustry);
     }
+
+
 }

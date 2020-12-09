@@ -23,7 +23,6 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class SI_Test_Base {
-
     public static WebDriver driver;
 
     @BeforeSuite
