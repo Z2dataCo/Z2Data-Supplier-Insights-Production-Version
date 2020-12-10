@@ -10,6 +10,7 @@ public class B_My_Supplier extends SI_Test_Base {
     public void Z2D_SupplierList() {
         My_Supplier_Page My_Supplier_Obj = new My_Supplier_Page(driver);
         Dashboard_Page Dashboard_Obj = new Dashboard_Page(driver);
+        ScrubPage scrubPage = new ScrubPage(driver);
 
         My_Supplier_Obj.Z2D_Open_Supplier_List();
         WaitAllElement();
@@ -47,9 +48,9 @@ public class B_My_Supplier extends SI_Test_Base {
         Assert.assertTrue(driver.getPageSource().contains("Antennas"));
         Assert.assertTrue(driver.getPageSource().contains("United States"));
         My_Supplier_Obj.Z2D_Open_Scrub_Tab();
-        String total = driver.findElement(Dashboard_Obj.Total_Supplier).getText();
-        String ExactMatch = driver.findElement(Dashboard_Obj.Exact_Match).getText();
-        String Nomatch = driver.findElement(Dashboard_Obj.No_Match).getText();
+        String total = driver.findElement(scrubPage.Total_Supplier).getText();
+        String ExactMatch = driver.findElement(scrubPage.Exact_Match).getText();
+        String Nomatch = driver.findElement(scrubPage.No_Match).getText();
         Assert.assertTrue(driver.getPageSource().contains(total));
         Assert.assertTrue(driver.getPageSource().contains(ExactMatch));
         Assert.assertTrue(driver.getPageSource().contains(Nomatch));

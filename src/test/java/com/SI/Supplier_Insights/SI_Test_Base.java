@@ -72,9 +72,7 @@ public class SI_Test_Base {
         }
         WaitAllElement();
         String URL = driver.getCurrentUrl();
-        driver.navigate().to("https://si.z2data.com/");
-
-
+       // driver.navigate().to("https://si.z2data.com/");
         if (ITestResult.SUCCESS == result.getStatus()) {
             System.out.println("[Good Job Scenario Pass]:" + result.getMethod().getMethodName() + URL);
         } else if (ITestResult.FAILURE == result.getStatus()) {

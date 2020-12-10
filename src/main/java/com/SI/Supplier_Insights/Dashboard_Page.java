@@ -18,9 +18,8 @@ public class Dashboard_Page {
     public By Private_Companies = By.xpath("//*[@id='z2-2cols-sub-2cols-left']/div[1]/div[2]/div[2]");
     public By Subsidiary_Companies = By.xpath("//*[@id='z2-2cols-sub-2cols-left']/div[1]/div[2]/div[3]");
     public By Alerts = By.xpath("//*[@id='z2-2cols-sub-2cols-left']/div[1]/div[2]/div[4]");
-    public By Total_Supplier =By.xpath("//td[@Class='text-center'][1]");
-    public By Exact_Match =By.xpath("//td[@Class='text-center'][2]");
-    public By No_Match =By.xpath("//td[@Class='text-center'][3]");
+
+
 
 
 public void Z2D_Open_High_Risk(){
