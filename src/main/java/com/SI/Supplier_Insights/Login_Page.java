@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Login_Page {
-    private WebDriver driver;
+    private final WebDriver driver;
     public String URL_for_Navigation = "https://si.z2data.com";
 
     public Login_Page(WebDriver driver) {

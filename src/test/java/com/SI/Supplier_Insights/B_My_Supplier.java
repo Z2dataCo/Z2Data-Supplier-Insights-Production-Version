@@ -1,63 +1,59 @@
 package com.SI.Supplier_Insights;
 
-import com.shaft.gui.element.ElementActions;
-import com.shaft.validation.Assertions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class B_MySupplier_Test extends SI_Test_Base {
-    MySupplierPage mySupplierPage;
-    Z2D_DashBoardPage dashBoard;
+public class B_My_Supplier extends SI_Test_Base {
 
 
     @Test
     public void Z2D_SupplierList() {
-        mySupplierPage = new MySupplierPage(driver);
-        dashBoard = new Z2D_DashBoardPage(driver);
+        My_Supplier_Page My_Supplier_Obj = new My_Supplier_Page(driver);
+        Dashboard_Page Dashboard_Obj = new Dashboard_Page(driver);
 
-        mySupplierPage.Z2D_OpenSupplierList();
+        My_Supplier_Obj.Z2D_Open_Supplier_List();
         WaitAllElement();
-        Assert.assertEquals(driver.findElement(mySupplierPage.DashBoard_Tab).getText(), "Dashboard");
-        Assert.assertEquals(driver.findElement(mySupplierPage.Scrub_Tab).getText(), "Scrub");
-        Assert.assertEquals(driver.findElement(mySupplierPage.Suppliers_Tab).getText(), "Suppliers");
-        Assert.assertEquals(driver.findElement(mySupplierPage.Alert_Tab).getText(), "Alerts");
-        Assert.assertEquals(driver.findElement(mySupplierPage.Reports_Tab).getText(), "Reports");
+        Assert.assertEquals(driver.findElement(My_Supplier_Obj.DashBoard_Tab).getText(), "Dashboard");
+        Assert.assertEquals(driver.findElement(My_Supplier_Obj.Scrub_Tab).getText(), "Scrub");
+        Assert.assertEquals(driver.findElement(My_Supplier_Obj.Suppliers_Tab).getText(), "Suppliers");
+        Assert.assertEquals(driver.findElement(My_Supplier_Obj.Alert_Tab).getText(), "Alerts");
+        Assert.assertEquals(driver.findElement(My_Supplier_Obj.Reports_Tab).getText(), "Reports");
 
         //Validate Data From Supplier List
-        dashBoard.Z2D_OpenHighRisk();
+        Dashboard_Obj.Z2D_Open_High_Risk();
         Assert.assertTrue(driver.getPageSource().contains("Japan"));
-        mySupplierPage.Z2D_OpenDashBoardTab();
-        dashBoard.Z2D_OpenMediumRisk();
+        My_Supplier_Obj.Z2D_Open_Dashboard_Tab();
+        Dashboard_Obj.Z2D_Open_Medium_Risk();
         Assert.assertTrue(driver.getPageSource().contains("Belgium"));
-        mySupplierPage.Z2D_OpenDashBoardTab();
-        dashBoard.Z2D_OpenLowRisk();
+        My_Supplier_Obj.Z2D_Open_Dashboard_Tab();
+        Dashboard_Obj.Z2D_Open_Low_Risk();
         Assert.assertTrue(driver.getPageSource().contains("Germany"));
-        mySupplierPage.Z2D_OpenDashBoardTab();
-        dashBoard.Z2D_OpenPublicCompanies();
+        My_Supplier_Obj.Z2D_Open_Dashboard_Tab();
+        Dashboard_Obj.Z2D_Open_Public_Companies();
         Assert.assertTrue(driver.getPageSource().contains("Germany"));
-        mySupplierPage.Z2D_OpenDashBoardTab();
-        dashBoard.Z2D_OpenPrivateCompanies();
+        My_Supplier_Obj.Z2D_Open_Dashboard_Tab();
+        Dashboard_Obj.Z2D_Open_Private_Companies();
         Assert.assertTrue(driver.getPageSource().contains("Netherlands"));
-        mySupplierPage.Z2D_OpenDashBoardTab();
-        dashBoard.Z2D_Subsidary_Companies();
+        My_Supplier_Obj.Z2D_Open_Dashboard_Tab();
+        Dashboard_Obj.Z2D_Subsidiary_Companies();
         Assert.assertTrue(driver.getPageSource().contains("United Kingdom"));
-        mySupplierPage.Z2D_OpenDashBoardTab();
-        dashBoard.Z2D_OpenAlerts();
+        My_Supplier_Obj.Z2D_Open_Dashboard_Tab();
+        Dashboard_Obj.Z2D_Open_Alerts();
         Assert.assertTrue(driver.getPageSource().contains("Micron Technology, Inc."));
-        mySupplierPage.Z2D_OpenAlertTap();
+        My_Supplier_Obj.Z2D_Open_Alert_Tab();
         Assert.assertTrue(driver.getPageSource().contains("Strong"));
         Assert.assertTrue(driver.getPageSource().contains("Japan"));
         Assert.assertTrue(driver.getPageSource().contains("Semiconductors"));
         Assert.assertTrue(driver.getPageSource().contains("Antennas"));
         Assert.assertTrue(driver.getPageSource().contains("United States"));
-        mySupplierPage.Z2D_OpenScrub();
-        String total = driver.findElement(dashBoard.TotalSupplier).getText();
-        String ExactMatch = driver.findElement(dashBoard.ExactMatch).getText();
-        String Nomatch = driver.findElement(dashBoard.NoMatch).getText();
+        My_Supplier_Obj.Z2D_Open_Scrub_Tab();
+        String total = driver.findElement(Dashboard_Obj.Total_Supplier).getText();
+        String ExactMatch = driver.findElement(Dashboard_Obj.Exact_Match).getText();
+        String Nomatch = driver.findElement(Dashboard_Obj.No_Match).getText();
         Assert.assertTrue(driver.getPageSource().contains(total));
         Assert.assertTrue(driver.getPageSource().contains(ExactMatch));
         Assert.assertTrue(driver.getPageSource().contains(Nomatch));
-        mySupplierPage.Z2D_OpenReportTab();
+        My_Supplier_Obj.Z2D_Open_Report_Tab();
         Assert.assertTrue(driver.getPageSource().contains("Basic Info"));
         Assert.assertTrue(driver.getPageSource().contains("Contacts"));
         Assert.assertTrue(driver.getPageSource().contains("Income Statement"));

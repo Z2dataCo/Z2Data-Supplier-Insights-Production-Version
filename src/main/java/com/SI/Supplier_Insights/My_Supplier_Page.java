@@ -10,9 +10,9 @@ import org.testng.Assert;
 
 import java.util.List;
 
-public class MySupplierPage {
-  private WebDriver driver;
-    public MySupplierPage(WebDriver driver) {
+public class My_Supplier_Page {
+  private final WebDriver driver;
+    public My_Supplier_Page(WebDriver driver) {
         this.driver = driver;
     }
     public By Supplier_List =By.partialLinkText("Hadeer_ Supplier Li");
@@ -25,27 +25,27 @@ public class MySupplierPage {
 
 
 
-public void Z2D_OpenSupplierList(){
+public void Z2D_Open_Supplier_List(){
     ElementActions.click(driver,Supplier_List);
 }
-public void Z2D_OpenDashBoardTab(){
+public void Z2D_Open_Dashboard_Tab(){
   ElementActions.click(driver,DashBoard_Tab);
 }
 
-public void Z2D_OpenAlertTap(){
+public void Z2D_Open_Alert_Tab(){
   ElementActions.click(driver,Alert_Tab);
 }
 
-public void Z2D_OpenScrub(){
+public void Z2D_Open_Scrub_Tab(){
   ElementActions.click(driver,Scrub_Tab);
 }
 
-public void Z2D_OpenReportTab(){
+public void Z2D_Open_Report_Tab(){
   ElementActions.click(driver,Reports_Tab);
 }
 
 
-public void Z2D_SelectFilter(){
+public void Z2D_Select_Filter(){
   ElementActions.click(driver,SingleFilter);
 }
 

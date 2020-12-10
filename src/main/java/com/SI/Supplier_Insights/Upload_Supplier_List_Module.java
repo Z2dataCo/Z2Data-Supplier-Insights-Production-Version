@@ -1,8 +1,6 @@
 package com.SI.Supplier_Insights;
 
-import com.shaft.cli.FileActions;
 import com.shaft.gui.element.ElementActions;
-import io.cucumber.java.an.E;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -11,15 +9,15 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
-public class UploadSupplierList {
-    private WebDriver driver;
+public class Upload_Supplier_List_Module {
+    private final WebDriver driver;
 
-    public UploadSupplierList(WebDriver driver) {
+    public Upload_Supplier_List_Module(WebDriver driver) {
         this.driver = driver;
     }
 
-    public By UploadSupplier_Btn = By.xpath("//Button[@class='header-rightaction']");
-    public By ClickToUploadSupp = By.xpath("//span[@class='bomupload-emph']");
+    public By Upload_Supplier_Btn = By.xpath("//Button[@class='header-rightaction']");
+    public By BOM_Upload = By.xpath("//span[@class='bomupload-emph']");
     public By Next_step1 = By.xpath("//*[@id=\"DivUploadBomFile\"]/div[2]/div/button");
     public By Tbl_Header = By.xpath("//span[@Class='colmapnameHead']");
     public By Tbl_Supplier = By.linkText("Supplier");
@@ -27,13 +25,13 @@ public class UploadSupplierList {
     public By Next_Step2 = By.xpath("//button[@Class='bomupload-next btnNext-step2']");
 
 
-    public void ClickToUploadFile() {
-        ElementActions.click(driver, UploadSupplier_Btn);
-        ElementActions.click(driver, ClickToUploadSupp);
+    public void Z2D_Click_on_Upload_File() {
+        ElementActions.click(driver, Upload_Supplier_Btn);
+        ElementActions.click(driver, BOM_Upload);
     }
 
-    public void UploadFile(String FilePath) throws AWTException {
-        StringSelection strSelection = new StringSelection(FilePath);
+    public void Z2D_Upload_BOM_File() throws AWTException {
+        StringSelection strSelection = new StringSelection(System.getProperty("user.dir") + "\\Testdata\\Sample of list of suppliers.xlsx");
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         clipboard.setContents(strSelection, null);
         Robot robot = new Robot();
@@ -50,17 +48,17 @@ public class UploadSupplierList {
 
     }
 
-    public void ClickNext() {
+    public void Z2D_Click_Next_for_Upload() {
         ElementActions.click(driver, Next_step1);
     }
 
-    public void Mapping() {
+    public void Z2D_BOM_Mapping() {
         ElementActions.click(driver, Tbl_Header);
         ElementActions.click(driver, Tbl_HQ);
         ElementActions.click(driver, Tbl_Supplier);
     }
 
-    public void ClickNext_2() {
+    public void Z2D_Click_Next_for_Mapping() {
         ElementActions.click(driver, Next_Step2);
     }
 }
