@@ -14,15 +14,18 @@ public class Landing_Page {
     public By MySupplier = By.id("aMySuppliers");
     public By Browse = By.xpath("//li[@style='position:relative;']");
     public By BrowserByIndustry = By.xpath("//a[@Class='d-flex align-items-center px-1 py-2 closeChild'][1]");
-    public By AdvancedSearch = By.linkText("Advanced Search");
+    public By AdvancedSearch = By.xpath("//a[@ng-reflect-router-link='/AdvancedSearch']");
     public By Compare = By.id("comparecur");
 
+    public By BrowseByName = By.xpath("//a[@Class='d-flex align-items-center px-1 py-2 closeChild'][3]");
+    public By BrowseByProduct = By.xpath("//a[@Class='d-flex align-items-center px-1 py-2 closeChild'][2]");
 
     public void Z2D_Open_My_Supplier() {
         ElementActions.click(driver, MySupplier);
     }
 
     public void Z2D_Open_Browse_Tab() {
+        ElementActions.click(driver, Browse);
         ElementActions.click(driver, Browse);
     }
 
@@ -39,4 +42,11 @@ public class Landing_Page {
     }
 
 
+    public void Z2D_BrowseByName() {
+        ElementActions.click(driver, BrowseByName);
+    }
+
+    public void Z2D_BrowseByProduct() {
+        ElementActions.click(driver, BrowseByProduct);
+    }
 }

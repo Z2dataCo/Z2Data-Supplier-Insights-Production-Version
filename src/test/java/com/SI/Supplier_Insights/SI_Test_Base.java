@@ -74,11 +74,11 @@ public class SI_Test_Base {
         String URL = driver.getCurrentUrl();
        // driver.navigate().to("https://si.z2data.com/");
         if (ITestResult.SUCCESS == result.getStatus()) {
-            System.out.println("[Good Job Scenario Pass]:" + result.getMethod().getMethodName() + URL);
+            System.out.println("[Scenario Pass]:" + result.getMethod().getMethodName() + URL);
         } else if (ITestResult.FAILURE == result.getStatus()) {
-            System.out.println("[Check Again Scenario Fail]:" + result.getMethod().getMethodName() + URL);
+            System.out.println("[Scenario Fail]:" + result.getMethod().getMethodName() + URL);
         } else {
-            System.out.println("Previous Fail then this Scenario Skipped]:" + result.getMethod().getMethodName() + URL);
+            System.out.println("[Scenario Skipped]:" + result.getMethod().getMethodName() + URL);
         }
     }
 
