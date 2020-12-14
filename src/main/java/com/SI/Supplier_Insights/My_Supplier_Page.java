@@ -53,5 +53,10 @@ public class My_Supplier_Page {
     }
 
     public void ClickOnFilter() {
-        ElementActions.click(driver, intelFilter); }
+        ElementActions.click(driver, intelFilter);
+    }
+
+    public void Z2D_OpenSupplierTap() {
+        ElementActions.click(driver, Suppliers_Tab);
+    }
 }

@@ -95,4 +95,13 @@ public class SI_Test_Base {
         WaitAllElement();
 
     }
+public void Switch(){
+    ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
+    driver.switchTo().window(tab2.get(0));
+    driver.switchTo().window(tab2.get(1));
+    driver.switchTo().window(tab2.get(0));
+
+}
+
+
 }

@@ -16,9 +16,13 @@ public class Landing_Page {
     public By BrowserByIndustry = By.xpath("//a[@Class='d-flex align-items-center px-1 py-2 closeChild'][1]");
     public By AdvancedSearch = By.xpath("//a[@ng-reflect-router-link='/AdvancedSearch']");
     public By Compare = By.id("comparecur");
-
     public By BrowseByName = By.xpath("//a[@Class='d-flex align-items-center px-1 py-2 closeChild'][3]");
     public By BrowseByProduct = By.xpath("//a[@Class='d-flex align-items-center px-1 py-2 closeChild'][2]");
+    public By SubmitTicket = By.xpath("//i[@Class='icon-Support-Ticket mr-05']");
+    public By Subject = By.xpath("//*[@id=\"dropbg\"]/div/div/div[2]/div[2]/div[2]/input");
+    public By issueArea = By.xpath("//*[@id=\"dropbg\"]/div/div/div[2]/div[3]/div[2]/textarea");
+    public By SendTicket = By.xpath("//*[@id=\"dropbg\"]/div/div/div[2]/button");
+
 
     public void Z2D_Open_My_Supplier() {
         ElementActions.click(driver, MySupplier);
@@ -41,7 +45,6 @@ public class Landing_Page {
         ElementActions.click(driver, BrowserByIndustry);
     }
 
-
     public void Z2D_BrowseByName() {
         ElementActions.click(driver, BrowseByName);
     }
@@ -49,4 +52,20 @@ public class Landing_Page {
     public void Z2D_BrowseByProduct() {
         ElementActions.click(driver, BrowseByProduct);
     }
+
+    public void Z2D_ClickSubmitTicket(){
+        ElementActions.click(driver,SubmitTicket);
+    }
+
+    public void Z2D_TicketSubject(String subject){
+        ElementActions.type(driver,Subject,subject);
+    }
+    public void Z2D_TicketDescription(String Text){
+        ElementActions.type(driver,issueArea,Text);
+    }
+
+    public void Z2D_SendTicket(){
+        ElementActions.click(driver,SendTicket);
+    }
+
 }

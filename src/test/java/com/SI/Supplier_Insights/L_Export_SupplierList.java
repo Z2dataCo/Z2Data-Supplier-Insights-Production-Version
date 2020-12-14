@@ -1,0 +1,19 @@
+package com.SI.Supplier_Insights;
+
+import org.testng.annotations.Test;
+
+public class L_Export_SupplierList extends SI_Test_Base {
+
+
+    @Test
+    public void ExportList() {
+        My_Supplier_Page mySupplierPage = new My_Supplier_Page(driver);
+        SupplierPage supplierPage = new SupplierPage(driver);
+        mySupplierPage.Z2D_Open_Supplier_List();
+        mySupplierPage.Z2D_OpenSupplierTap();
+        supplierPage.Z2D_SelectSupp1();
+        supplierPage.Z2D_SelectSupp2();
+        supplierPage.ExportFile();
+
+    }
+}
