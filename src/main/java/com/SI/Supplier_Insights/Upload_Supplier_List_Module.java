@@ -20,8 +20,8 @@ public class Upload_Supplier_List_Module {
     public By BOM_Upload = By.xpath("//span[@class='bomupload-emph']");
     public By Next_step1 = By.xpath("//*[@id=\"DivUploadBomFile\"]/div[2]/div/button");
     public By Tbl_Header = By.xpath("//span[@Class='colmapnameHead']");
-    public By Tbl_Supplier = By.linkText("Supplier");
-    public By Tbl_HQ = By.linkText("HQ");
+    public By Tbl_Supplier = By.xpath("//body/div[@id='dropbg']/div[2]/ul/li[1]/a");
+    public By Tbl_HQ = By.xpath("//body/div[@id='dropbg']/div[2]/ul/li[3]/a");
     public By Next_Step2 = By.xpath("//button[@Class='bomupload-next btnNext-step2']");
 
 
@@ -55,6 +55,7 @@ public class Upload_Supplier_List_Module {
     public void Z2D_BOM_Mapping() {
         ElementActions.click(driver, Tbl_Header);
         ElementActions.click(driver, Tbl_HQ);
+        ElementActions.click(driver, Tbl_Header);
         ElementActions.click(driver, Tbl_Supplier);
     }
 
