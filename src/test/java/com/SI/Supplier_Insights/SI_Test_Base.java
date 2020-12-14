@@ -28,6 +28,7 @@ public class SI_Test_Base {
     @BeforeSuite
     public void StartDriver() {
         driver = BrowserFactory.getBrowser(BrowserFactory.BrowserType.GOOGLE_CHROME);
+        ChromeOptions options = new ChromeOptions();
         BrowserActions.navigateToURL(driver, "https://suppliers.z2data.com/");
         login();
     }
