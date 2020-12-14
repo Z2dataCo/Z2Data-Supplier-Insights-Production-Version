@@ -15,5 +15,6 @@ public class A_Upload_Suppliers_List extends SI_Test_Base {
         Upload_Supplier_List_Obj.Z2D_Click_Next_for_Upload();
         Upload_Supplier_List_Obj.Z2D_BOM_Mapping();
         Upload_Supplier_List_Obj.Z2D_Click_Next_for_Mapping();
+        Upload_Supplier_List_Obj.Z2D_ClickFinish();
     }
 }

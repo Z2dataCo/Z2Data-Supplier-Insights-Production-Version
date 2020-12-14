@@ -2,6 +2,7 @@ package com.SI.Supplier_Insights;
 
 import com.shaft.gui.browser.BrowserActions;
 import com.shaft.gui.browser.BrowserFactory;
+import io.cucumber.java.jv.Lan;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -60,6 +61,7 @@ public class SI_Test_Base {
 
     @AfterMethod
     public void Back_To_Landing(ITestResult result) {
+        Landing_Page landingPage = new Landing_Page(driver);
         String filename = new SimpleDateFormat("ddMMyyHHmm").format(new Date());
         if (ITestResult.FAILURE == result.getStatus()) {
             try {
@@ -73,7 +75,7 @@ public class SI_Test_Base {
         }
         WaitAllElement();
         String URL = driver.getCurrentUrl();
-       // driver.navigate().to("https://si.z2data.com/");
+        // driver.navigate().to("https://si.z2data.com/");
         if (ITestResult.SUCCESS == result.getStatus()) {
             System.out.println("[Scenario Pass]:" + result.getMethod().getMethodName() + URL);
         } else if (ITestResult.FAILURE == result.getStatus()) {
@@ -81,6 +83,7 @@ public class SI_Test_Base {
         } else {
             System.out.println("[Scenario Skipped]:" + result.getMethod().getMethodName() + URL);
         }
+        landingPage.BackToLanding();
     }
 
     @AfterSuite
@@ -96,13 +99,14 @@ public class SI_Test_Base {
         WaitAllElement();
 
     }
-public void Switch(){
-    ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
-    driver.switchTo().window(tab2.get(0));
-    driver.switchTo().window(tab2.get(1));
-    driver.switchTo().window(tab2.get(0));
 
-}
+    public void Switch() {
+        ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tab2.get(0));
+        driver.switchTo().window(tab2.get(1));
+        driver.switchTo().window(tab2.get(0));
+
+    }
 
 
 }

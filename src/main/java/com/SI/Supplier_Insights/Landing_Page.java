@@ -22,6 +22,7 @@ public class Landing_Page {
     public By Subject = By.xpath("//*[@id=\"dropbg\"]/div/div/div[2]/div[2]/div[2]/input");
     public By issueArea = By.xpath("//*[@id=\"dropbg\"]/div/div/div[2]/div[3]/div[2]/textarea");
     public By SendTicket = By.xpath("//*[@id=\"dropbg\"]/div/div/div[2]/button");
+    public  By Z2DLogo= By.xpath("/html/body/app-root/parentroute-component/app-z2dataapp/div/div[1]/div[1]/a/img");
 
 
     public void Z2D_Open_My_Supplier() {
@@ -68,4 +69,7 @@ public class Landing_Page {
         ElementActions.click(driver,SendTicket);
     }
 
+public void BackToLanding(){
+        ElementActions.click(driver,Z2DLogo);
+}
 }

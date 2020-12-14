@@ -20,6 +20,7 @@ public class F_CreateReport extends SI_Test_Base {
         reportPage.Z2D_SaveReport();
         reportPage.Z2D_EnterReportName(Name);
         reportPage.Z2D_SubmitReport();
+        Assert.assertTrue(driver.findElement(reportPage.verifyMsg).isDisplayed());
         reportPage.Z2D_Email_Report();
         reportPage.Z2D_EnterEmail(Email);
         reportPage.Z2D_SubmitEmail();

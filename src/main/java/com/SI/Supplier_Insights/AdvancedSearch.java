@@ -24,6 +24,7 @@ public class AdvancedSearch {
     public By StrongFilter = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[1]/table/tbody/tr/td[1]/div/div[1]/label/span");
 
     public By Clear = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[2]/div[1]/div[1]/a[1]");
+    public By PublicFilter =By.xpath("//tbody/tr[1]/td[2]/div[1]/div[1]/label[1]/span[1]");
 
 
     public void Z2D_SelectSupp1() {
@@ -68,5 +69,9 @@ public class AdvancedSearch {
 
     public void Z2D_ClearCheckBox() {
         ElementActions.click(driver,Clear);
+
+    }
+    public void Z2Data_SelecetPublicFilter(){
+        ElementActions.click(driver,PublicFilter);
     }
 }

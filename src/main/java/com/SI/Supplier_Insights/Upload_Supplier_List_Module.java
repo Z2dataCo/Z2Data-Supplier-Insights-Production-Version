@@ -23,6 +23,7 @@ public class Upload_Supplier_List_Module {
     public By Tbl_Supplier = By.xpath("//body/div[@id='dropbg']/div[2]/ul/li[1]/a");
     public By Tbl_HQ = By.xpath("//body/div[@id='dropbg']/div[2]/ul/li[3]/a");
     public By Next_Step2 = By.xpath("//button[@Class='bomupload-next btnNext-step2']");
+    public By Finish = By.id("btnSaveBom");
 
 
     public void Z2D_Click_on_Upload_File() {
@@ -61,5 +62,9 @@ public class Upload_Supplier_List_Module {
 
     public void Z2D_Click_Next_for_Mapping() {
         ElementActions.click(driver, Next_Step2);
+    }
+
+    public void Z2D_ClickFinish(){
+        ElementActions.click(driver,Finish);
     }
 }

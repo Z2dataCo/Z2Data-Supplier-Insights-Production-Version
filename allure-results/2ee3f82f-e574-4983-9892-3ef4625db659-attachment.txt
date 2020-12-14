@@ -1,0 +1,47 @@
+################################################################################################################################################
+Detected SHAFT Engine Version: [SHAFT Engine v4.3]
+################################################################################################################################################
+[ReportManager] File Action [getAbsolutePath] successfully performed. With the following test data [Relative Folder Path: "target/downloadedFiles/"]. @14-12-2020 15:44:16.0456 PM
+[ReportManager] Attempting to run locally on: [Windows-64], [GoogleChrome]. @14-12-2020 15:44:16.0522 PM
+[ReportManager] Identifying OS/Browser combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time... @14-12-2020 15:44:16.0525 PM
+[ReportManager] Successfully Opened Google Chrome. @14-12-2020 15:44:20.0936 PM
+[ReportManager] Target URL: [https://suppliers.z2data.com/] @14-12-2020 15:44:20.0954 PM
+[ReportManager] Initial URL: [data:,] @14-12-2020 15:44:21.0251 PM
+[ReportManager] File Action [createFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20201214-154416", Target File: "\1607953475236_StartDriver.gif"]. @14-12-2020 15:44:35.0605 PM
+[ReportManager] Browser Action [navigateToURL] successfully performed. With the following test data [https://suppliers.z2data.com/]. @14-12-2020 15:44:37.0813 PM
+[ReportManager] Element Action [type] successfully performed. With the following test data [m.sultan@z2data.com]. @14-12-2020 15:44:38.0339 PM
+[ReportManager] Element Action [type] successfully performed. With the following test data [M.sultan@z2data.com]. @14-12-2020 15:44:38.0860 PM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Sign in]. @14-12-2020 15:44:45.0676 PM
+[ReportManager] Successfully created attachment [Video Recording - StartDriver] @14-12-2020 15:44:52.0320 PM
+[ReportManager] Successfully created attachment [Animated Gif - StartDriver] @14-12-2020 15:44:52.0325 PM
+
+
+################################################################################################################################################
+Starting Execution:	[1 out of 1] test cases in the current suite
+Test Method:		[com.SI.Supplier_Insights.T_SupplierSearchMultiFilter.SupplierSearchMultiFilter]
+################################################################################################################################################
+[ReportManager] File Action [createFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20201214-154416", Target File: "\1607953494854_SupplierSearchMultiFilter.gif"]. @14-12-2020 15:44:54.0928 PM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Advanced Search]. @14-12-2020 15:44:58.0586 PM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Strong (1576)]. @14-12-2020 15:45:04.0775 PM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Public (1494)]. @14-12-2020 15:45:07.0903 PM
+[ReportManager] Element Action [click] successfully performed. With the following test data [on]. @14-12-2020 15:45:11.0031 PM
+[ReportManager] Element Action [click] successfully performed. With the following test data [on]. @14-12-2020 15:45:14.0014 PM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Compare]. @14-12-2020 15:45:17.0586 PM
+[ReportManager] Element Action [click] successfully performed. @14-12-2020 15:45:23.0266 PM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Clear]. @14-12-2020 15:45:26.0712 PM
+[ReportManager] Successfully created attachment [Video Recording - SupplierSearchMultiFilter] @14-12-2020 15:45:36.0316 PM
+[ReportManager] Successfully created attachment [Animated Gif - SupplierSearchMultiFilter] @14-12-2020 15:45:36.0328 PM
+[ReportManager] File Action [createFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20201214-154416", Target File: "\1607953537208_Back_To_Landing.gif"]. @14-12-2020 15:45:37.0291 PM
+[ReportManager] Element Action [click] successfully performed. @14-12-2020 15:45:41.0287 PM
+[ReportManager] Successfully created attachment [Video Recording - Back_To_Landing] @14-12-2020 15:45:43.0638 PM
+[ReportManager] Successfully created attachment [Animated Gif - Back_To_Landing] @14-12-2020 15:45:43.0640 PM
+
+################################################################################################################################################
+Test Closure Activities
+################################################################################################################################################
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Execution log] @14-12-2020 15:45:46.0214 PM
+
+################################################################################################################################################
+This test run was powered by SHAFT Engine Version: [SHAFT Engine v4.3]
+SHAFT Engine is licensed under the MIT License: [https://github.com/MohabMohie/SHAFT_ENGINE/blob/master/LICENSE].
+################################################################################################################################################
