@@ -22,9 +22,10 @@ public class AdvancedSearch {
     public By cmpnyname = By.xpath("//thead/tr[1]/td[1]");
     public By Remove = By.xpath("//i[@Class='fas fa-times mr-03']");
     public By StrongFilter = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[1]/table/tbody/tr/td[1]/div/div[1]/label/span");
-
     public By Clear = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[2]/div[1]/div[1]/a[1]");
-    public By PublicFilter =By.xpath("//tbody/tr[1]/td[2]/div[1]/div[1]/label[1]/span[1]");
+    public By PublicFilter = By.xpath("//tbody/tr[1]/td[2]/div[1]/div[1]/label[1]/span[1]");
+    public By SuppLogo = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[4]/table/tbody/tr[1]/td[2]");
+    public By Compare = By.xpath("//i[@class='z2iconfont icon-Compare mr-03']");
 
 
     public void Z2D_SelectSupp1() {
@@ -63,15 +64,24 @@ public class AdvancedSearch {
         ElementActions.click(driver, Remove);
     }
 
+    public void Z2D_ClickCompare() {
+        ElementActions.click(driver, Compare);
+    }
+
     public void Z2D_SelectStrongFilter() {
         ElementActions.click(driver, StrongFilter);
     }
 
     public void Z2D_ClearCheckBox() {
-        ElementActions.click(driver,Clear);
+        ElementActions.click(driver, Clear);
 
     }
-    public void Z2Data_SelecetPublicFilter(){
-        ElementActions.click(driver,PublicFilter);
+
+    public void Z2Data_SelecetPublicFilter() {
+        ElementActions.click(driver, PublicFilter);
+    }
+
+    public void Z2D_SupplierProfile() {
+        ElementActions.click(driver, SuppLogo);
     }
 }

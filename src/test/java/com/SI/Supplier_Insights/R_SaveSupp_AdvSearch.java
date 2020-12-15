@@ -1,10 +1,13 @@
 package com.SI.Supplier_Insights;
 
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class R_SaveSupp_AdvSearch extends SI_Test_Base {
     @Test
+
+    @Description("Scenario ID = [SI-22]")
     public void SaveProfile_AdvancedSearch() {
         Landing_Page landingPage = new Landing_Page(driver);
         AdvancedSearch advancedSearch = new AdvancedSearch(driver);

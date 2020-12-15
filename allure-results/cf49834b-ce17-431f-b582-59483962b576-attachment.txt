@@ -1,2 +1,0 @@
-[ReportManager] Browser Action [closeCurrentWindow] successfully performed. @14-12-2020 15:45:46.0233 PM
-[ReportManager] Successfully created attachment [Video Recording - TearDown] @14-12-2020 15:45:46.0776 PM

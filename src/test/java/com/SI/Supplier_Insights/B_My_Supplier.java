@@ -1,5 +1,6 @@
 package com.SI.Supplier_Insights;
 
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -7,6 +8,7 @@ public class B_My_Supplier extends SI_Test_Base {
 
 
     @Test
+    @Description("Scenario ID = [SI-2]")
     public void Z2D_SupplierList() {
         My_Supplier_Page My_Supplier_Obj = new My_Supplier_Page(driver);
         Dashboard_Page Dashboard_Obj = new Dashboard_Page(driver);

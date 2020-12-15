@@ -1,4 +1,0 @@
-[ReportManager] File Action [createFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20201214-154416", Target File: "\1607953537208_Back_To_Landing.gif"]. @14-12-2020 15:45:37.0291 PM
-[ReportManager] Element Action [click] successfully performed. @14-12-2020 15:45:41.0287 PM
-[ReportManager] Successfully created attachment [Video Recording - Back_To_Landing] @14-12-2020 15:45:43.0638 PM
-[ReportManager] Successfully created attachment [Animated Gif - Back_To_Landing] @14-12-2020 15:45:43.0640 PM

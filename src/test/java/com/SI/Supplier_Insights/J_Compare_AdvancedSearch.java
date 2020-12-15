@@ -1,11 +1,13 @@
 package com.SI.Supplier_Insights;
 
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class J_Compare_AdvancedSearch extends SI_Test_Base {
 
     @Test
+    @Description("Scenario ID = [SI-15]")
     public void Z2D_Compare() {
         Landing_Page landing_page = new Landing_Page(driver);
         AdvancedSearch advancedSearch = new AdvancedSearch(driver);

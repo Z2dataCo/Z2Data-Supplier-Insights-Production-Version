@@ -1,5 +1,6 @@
 package com.SI.Supplier_Insights;
 
+import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.testng.Assert;
@@ -7,6 +8,7 @@ import org.testng.annotations.Test;
 
 public class I_BrowseByIndustry extends SI_Test_Base {
     @Test
+    @Description("Scenario ID = [SI-12]")
     public void BrowseByIndustry() {
         Landing_Page landing_page = new Landing_Page(driver);
         BrowseByIndustry byIndustry = new BrowseByIndustry(driver);

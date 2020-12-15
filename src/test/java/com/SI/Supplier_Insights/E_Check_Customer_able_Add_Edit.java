@@ -1,6 +1,7 @@
 package com.SI.Supplier_Insights;
 
 import com.shaft.validation.Assertions;
+import io.qameta.allure.Description;
 import org.apache.commons.math3.analysis.function.Add;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -9,6 +10,7 @@ import org.testng.annotations.Test;
 public class E_Check_Customer_able_Add_Edit extends SI_Test_Base {
 
     @Test
+    @Description("Scenario ID = [SI-7]")
     public void Z2D_Customer_authorization() {
         My_Supplier_Page My_Supplier_Obj = new My_Supplier_Page(driver);
         ScrubPage scrubPage = new ScrubPage(driver);

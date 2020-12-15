@@ -1,5 +1,6 @@
 package com.SI.Supplier_Insights;
 
+import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
 import java.awt.*;
@@ -7,6 +8,7 @@ import java.awt.*;
 public class A_Upload_Suppliers_List extends SI_Test_Base {
 
     @Test
+    @Description("Scenario ID = [SI-1]")
     public void Upload_Suppliers_List() throws AWTException {
         Upload_Supplier_List_Module Upload_Supplier_List_Obj = new Upload_Supplier_List_Module(driver);
 

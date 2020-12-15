@@ -1,10 +1,12 @@
 package com.SI.Supplier_Insights;
 
+import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
 public class N_Export_MultiFilter extends SI_Test_Base {
 
     @Test
+    @Description("Scenario ID = [SI-19]")
     public void ExportMultiFilter() {
         My_Supplier_Page mySupplierPage = new My_Supplier_Page(driver);
         SupplierPage supplierPage = new SupplierPage(driver);

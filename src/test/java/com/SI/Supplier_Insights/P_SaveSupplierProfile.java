@@ -1,10 +1,12 @@
 package com.SI.Supplier_Insights;
 
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class P_SaveSupplierProfile extends SI_Test_Base {
     @Test
+    @Description("Scenario ID = [SI-21]")
     public void SaveProfile() {
         My_Supplier_Page mySupplierPage = new My_Supplier_Page(driver);
         SupplierPage supplierPage = new SupplierPage(driver);

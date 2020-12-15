@@ -1,10 +1,12 @@
 package com.SI.Supplier_Insights;
 
+import io.qameta.allure.Description;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 public class M_Export_SingleFilter extends SI_Test_Base {
     @Test
+    @Description("Scenario ID = [SI-18]")
     public void ExportSingleFilter() {
         My_Supplier_Page mySupplierPage = new My_Supplier_Page(driver);
         SupplierPage supplierPage = new SupplierPage(driver);

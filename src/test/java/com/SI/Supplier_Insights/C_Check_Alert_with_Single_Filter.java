@@ -1,5 +1,6 @@
 package com.SI.Supplier_Insights;
 
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -7,6 +8,7 @@ public class C_Check_Alert_with_Single_Filter extends SI_Test_Base {
 
 
     @Test
+    @Description("Scenario ID = [SI-4]")
     public void Z2D_SingleFilter() {
         My_Supplier_Page My_Supplier_Obj = new My_Supplier_Page(driver);
 

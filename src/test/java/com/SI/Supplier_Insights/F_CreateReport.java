@@ -1,6 +1,7 @@
 package com.SI.Supplier_Insights;
 
 import com.github.javafaker.Faker;
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,6 +12,7 @@ public class F_CreateReport extends SI_Test_Base {
     String Email = faker.internet().emailAddress();
 
     @Test
+    @Description("Scenario ID = [SI-8]")
     public void Z2D_CreateReport() {
         My_Supplier_Page My_supplier_Page = new My_Supplier_Page(driver);
         ReportPage reportPage = new ReportPage(driver);

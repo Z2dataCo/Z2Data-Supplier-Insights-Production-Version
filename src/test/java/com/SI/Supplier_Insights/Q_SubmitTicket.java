@@ -1,5 +1,6 @@
 package com.SI.Supplier_Insights;
 
+import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
 public class Q_SubmitTicket extends SI_Test_Base {
@@ -8,6 +9,7 @@ public class Q_SubmitTicket extends SI_Test_Base {
     String issue = "automation";
 
     @Test
+    @Description("Scenario ID = [SI-3]")
     public void SubmitTicket() {
         Landing_Page landingPage = new Landing_Page(driver);
         landingPage.Z2D_ClickSubmitTicket();

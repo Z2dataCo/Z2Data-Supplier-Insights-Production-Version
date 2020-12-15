@@ -1,5 +1,6 @@
 package com.SI.Supplier_Insights;
 
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,6 +12,7 @@ public class K_Compare_Company extends SI_Test_Base {
 
 
     @Test
+    @Description("Scenario ID = [SI-16]")
     public void CompareBetweenCompanies() {
         Landing_Page landing_page = new Landing_Page(driver);
         ComparePage comparePage = new ComparePage(driver);

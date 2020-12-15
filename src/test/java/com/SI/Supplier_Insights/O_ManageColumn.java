@@ -1,11 +1,13 @@
 package com.SI.Supplier_Insights;
 
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class O_ManageColumn extends SI_Test_Base {
 
     @Test
+    @Description("Scenario ID = [SI-20]")
     public void ExportWith_ManageColumn() {
         My_Supplier_Page mySupplierPage = new My_Supplier_Page(driver);
         SupplierPage supplierPage = new SupplierPage(driver);

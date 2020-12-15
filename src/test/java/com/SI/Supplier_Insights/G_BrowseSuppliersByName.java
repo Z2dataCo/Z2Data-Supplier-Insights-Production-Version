@@ -1,5 +1,6 @@
 package com.SI.Supplier_Insights;
 
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -8,6 +9,7 @@ public class G_BrowseSuppliersByName extends SI_Test_Base {
     String SearchValue = "3M";
 
     @Test
+    @Description("Scenario ID = [SI-10]")
     public void Search() {
         Landing_Page landing_page = new Landing_Page(driver);
         BrowseByNamePage browseByName = new BrowseByNamePage(driver);
