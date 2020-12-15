@@ -23,7 +23,10 @@ public class Landing_Page {
     public By issueArea = By.xpath("//*[@id=\"dropbg\"]/div/div/div[2]/div[3]/div[2]/textarea");
     public By SendTicket = By.xpath("//*[@id=\"dropbg\"]/div/div/div[2]/button");
     public By Z2DLogo = By.xpath("/html/body/app-root/parentroute-component/app-z2dataapp/div/div[1]/div[1]/a/img");
-
+    public By SearchInput = By.id("txtMainBarSearch");
+    public By SearcValue = By.cssSelector("div[class='z2-searchbox clearfix'] li:nth-child(1) a:nth-child(1)");
+    public By Save_Btn = By.xpath("//*[@id=\"z2page-head-bar\"]/div/button");
+    public By CreateAlert = By.xpath("//body//app-root//div[1]//div[1]//app-create-alert[1]//button[1]");
 
     public void Z2D_Open_My_Supplier() {
         ElementActions.click(driver, MySupplier);
@@ -37,6 +40,7 @@ public class Landing_Page {
     public void Z2D_Open_Advanced_Search_Tab() {
         ElementActions.click(driver, AdvancedSearch);
     }
+
 
     public void Z2D_Open_Compare_Tab() {
         ElementActions.click(driver, Compare);
@@ -72,5 +76,17 @@ public class Landing_Page {
 
     public void BackToLanding() {
         ElementActions.click(driver, Z2DLogo);
+    }
+
+    public void Z2D_EnterSuppName(String Suppname) {
+        ElementActions.type(driver, SearchInput, Suppname);
+    }
+
+    public void Z2D_SelectSearchValue() {
+        ElementActions.click(driver, SearcValue);
+    }
+
+    public void Z2D_ClicOnkSaveButton() {
+        ElementActions.click(driver, Save_Btn);
     }
 }
