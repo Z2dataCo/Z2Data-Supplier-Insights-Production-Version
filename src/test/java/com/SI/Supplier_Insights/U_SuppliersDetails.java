@@ -1,10 +1,12 @@
 package com.SI.Supplier_Insights;
 
+import io.qameta.allure.Description;
 import org.junit.Assert;
 import org.testng.annotations.Test;
 
 public class U_SuppliersDetails extends SI_Test_Base {
     @Test
+    @Description("Scenario ID = [SI-23]")
     public void Validate_SupplierDetails() {
         Landing_Page landingPage = new Landing_Page(driver);
         AdvancedSearch advancedSearch = new AdvancedSearch(driver);
