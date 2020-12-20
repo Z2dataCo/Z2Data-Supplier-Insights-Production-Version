@@ -5,10 +5,10 @@ import io.cucumber.java.it.Ma;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ReportPage {
+public class Report_Page {
     WebDriver driver;
 
-    public ReportPage(WebDriver driver) {
+    public Report_Page(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -25,15 +25,15 @@ public class ReportPage {
         ElementActions.click(driver, BasicInfo);
     }
 
-    public void Z2D_SaveReport() {
+    public void Z2D_Save_Report() {
         ElementActions.click(driver, SaveReport);
     }
 
-    public void Z2D_EnterReportName(String Name) {
+    public void Z2D_Enter_Report_Name(String Name) {
         ElementActions.type(driver, ReportInput, Name);
     }
 
-    public void Z2D_SubmitReport() {
+    public void Z2D_Submit_Report() {
         ElementActions.click(driver, SubmitReport);
     }
 
@@ -41,11 +41,11 @@ public class ReportPage {
         ElementActions.click(driver, EmailReport);
     }
 
-    public void Z2D_EnterEmail(String Mail) {
+    public void Z2D_Enter_Email(String Mail) {
         ElementActions.type(driver, Email_Input, Mail);
     }
 
-    public void Z2D_SubmitEmail() {
-        ElementActions.click(driver,SendEmail);
+    public void Z2D_Submit_Email() {
+        ElementActions.click(driver, SendEmail);
     }
 }

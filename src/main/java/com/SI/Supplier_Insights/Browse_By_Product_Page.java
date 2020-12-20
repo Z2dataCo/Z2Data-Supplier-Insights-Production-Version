@@ -4,10 +4,10 @@ import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class BrowseByProduct {
+public class Browse_By_Product_Page {
     WebDriver driver;
 
-    public BrowseByProduct(WebDriver driver) {
+    public Browse_By_Product_Page(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -19,22 +19,22 @@ public class BrowseByProduct {
     public By VerifyMsg=By.xpath("//div[@aria-label='Suppliers Added Successfuly']");
 
 
-    public void Z2D_EnterProductName (String Value){
+    public void Z2D_Enter_Product_Name (String Value){
         ElementActions.type(driver,SearchInput,Value);
     }
 
-    public void ClickOnArrow(){
+    public void Click_On_Arrow(){
         ElementActions.click(driver,ChemicalsArrow);
     }
 
-    public void SelectProduct(){
+    public void Select_Product(){
         ElementActions.click(driver,DiversifedChemicals);
     }
-    public void SelectSupplier(){
+    public void Select_Supplier(){
         ElementActions.click(driver,Checkbox);
     }
 
-    public void SaveInforamtion(){
+    public void Save_Information(){
         ElementActions.click(driver,SaveSearch);
     }
 

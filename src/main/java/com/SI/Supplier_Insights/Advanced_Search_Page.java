@@ -4,10 +4,10 @@ import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class AdvancedSearch {
+public class Advanced_Search_Page {
     WebDriver driver;
 
-    public AdvancedSearch(WebDriver driver) {
+    public Advanced_Search_Page(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -19,7 +19,7 @@ public class AdvancedSearch {
     public By Compare_btn = By.xpath("//a[@class='btn btn-outline-z2 float-left mr-03'][2]");
     public By Save_Btn = By.xpath("//i[@Class='la la-save']");
     public By ddl_Saved = By.xpath("//a[@data-z2dropdownsmenus='saved-menu']");
-    public By cmpnyname = By.xpath("//thead/tr[1]/td[1]");
+    public By Company_Name = By.xpath("//thead/tr[1]/td[1]");
     public By Remove = By.xpath("//i[@Class='fas fa-times mr-03']");
     public By StrongFilter = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[1]/table/tbody/tr/td[1]/div/div[1]/label/span");
     public By Clear = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[2]/div[1]/div[1]/a[1]");
@@ -28,23 +28,23 @@ public class AdvancedSearch {
     public By Compare = By.xpath("//i[@class='z2iconfont icon-Compare mr-03']");
 
 
-    public void Z2D_SelectSupp1() {
+    public void Z2D_Select_Supp1() {
         ElementActions.click(driver, Supp1);
     }
 
-    public void Z2D_SelectSupp2() {
+    public void Z2D_Select_Supp2() {
         ElementActions.click(driver, Supp2);
     }
 
-    public void Z2D_SelectSupp3() {
+    public void Z2D_Select_Supp3() {
         ElementActions.click(driver, Supp3);
     }
 
-    public void Z2D_SelectSupp4() {
+    public void Z2D_Select_Supp4() {
         ElementActions.click(driver, Supp4);
     }
 
-    public void Z2DCompare_AdavncedSearch() {
+    public void Z2D_Compare_Advanced_Search() {
         ElementActions.click(driver, Compare_btn);
     }
 
@@ -52,36 +52,36 @@ public class AdvancedSearch {
         ElementActions.click(driver, Save_Btn);
     }
 
-    public void OpenDropDownList() {
+    public void Open_Drop_Down_List() {
         ElementActions.click(driver, ddl_Saved);
     }
 
-    public void Z2D_SelectAll() {
-        ElementActions.click(driver, cmpnyname);
+    public void Z2D_Select_All() {
+        ElementActions.click(driver, Company_Name);
     }
 
-    public void Z2D_ClickRemove() {
+    public void Z2D_Click_Remove() {
         ElementActions.click(driver, Remove);
     }
 
-    public void Z2D_ClickCompare() {
+    public void Z2D_Click_Compare() {
         ElementActions.click(driver, Compare);
     }
 
-    public void Z2D_SelectStrongFilter() {
+    public void Z2D_Select_Strong_Filter() {
         ElementActions.click(driver, StrongFilter);
     }
 
-    public void Z2D_ClearCheckBox() {
+    public void Z2D_Clear_Check_Box() {
         ElementActions.click(driver, Clear);
 
     }
 
-    public void Z2Data_SelecetPublicFilter() {
+    public void Z2D_Select_Public_Filter() {
         ElementActions.click(driver, PublicFilter);
     }
 
-    public void Z2D_SupplierProfile() {
+    public void Z2D_Supplier_Profile() {
         ElementActions.click(driver, SuppLogo);
     }
 }

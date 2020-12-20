@@ -12,10 +12,18 @@ public class B_My_Supplier extends SI_Test_Base {
     public void Z2D_SupplierList() {
         My_Supplier_Page My_Supplier_Obj = new My_Supplier_Page(driver);
         Dashboard_Page Dashboard_Obj = new Dashboard_Page(driver);
-        ScrubPage scrubPage = new ScrubPage(driver);
+        Scrub_Page scrubPage = new Scrub_Page(driver);
 
         My_Supplier_Obj.Z2D_Open_Supplier_List();
         WaitAllElement();
+        Assert.assertTrue(driver.findElement(Dashboard_Obj.High_Risk).isDisplayed());
+        Assert.assertTrue(driver.findElement(Dashboard_Obj.Low_Risk).isDisplayed());
+        Assert.assertTrue(driver.findElement(Dashboard_Obj.Medium_Risk).isDisplayed());
+        Assert.assertTrue(driver.findElement(Dashboard_Obj.Countries).isDisplayed());
+        Assert.assertTrue(driver.findElement(Dashboard_Obj.Public_Companies).isDisplayed());
+        Assert.assertTrue(driver.findElement(Dashboard_Obj.Private_Companies).isDisplayed());
+        Assert.assertTrue(driver.findElement(Dashboard_Obj.Subsidiary_Companies).isDisplayed());
+        Assert.assertTrue(driver.findElement(Dashboard_Obj.Alerts).isDisplayed());
         Assert.assertEquals(driver.findElement(My_Supplier_Obj.DashBoard_Tab).getText(), "Dashboard");
         Assert.assertEquals(driver.findElement(My_Supplier_Obj.Scrub_Tab).getText(), "Scrub");
         Assert.assertEquals(driver.findElement(My_Supplier_Obj.Suppliers_Tab).getText(), "Suppliers");

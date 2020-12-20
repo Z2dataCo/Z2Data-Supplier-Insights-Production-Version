@@ -4,10 +4,10 @@ import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class BrowseByNamePage {
+public class Browse_By_Name_Page {
     WebDriver driver;
 
-    public BrowseByNamePage(WebDriver driver) {
+    public Browse_By_Name_Page(WebDriver driver) {
         this.driver = driver;
     }
 

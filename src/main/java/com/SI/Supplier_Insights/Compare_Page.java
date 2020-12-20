@@ -4,10 +4,10 @@ import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ComparePage {
+public class Compare_Page {
     WebDriver driver;
 
-    public ComparePage(WebDriver driver) {
+    public Compare_Page(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -31,7 +31,6 @@ public class ComparePage {
     public void Z2D_SetValue2() {
         ElementActions.click(driver, SearchValue2);
     }
-
 
     public void Z2D_SetCompanyName2(String name) {
         ElementActions.type(driver, CompareInput2, name);

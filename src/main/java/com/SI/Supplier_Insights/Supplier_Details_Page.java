@@ -4,10 +4,10 @@ import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class SupplierDetails {
+public class Supplier_Details_Page {
     WebDriver driver;
 
-    public SupplierDetails(WebDriver driver) {
+    public Supplier_Details_Page(WebDriver driver) {
         this.driver = driver;
     }
 

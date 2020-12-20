@@ -4,10 +4,10 @@ import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class SupplierPage {
+public class Supplier_Page {
     WebDriver driver;
 
-    public SupplierPage(WebDriver driver) {
+    public Supplier_Page(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -23,36 +23,36 @@ public class SupplierPage {
     public By VerifyMsg = By.xpath("//div[@Class='toast-message ng-star-inserted']");
     public By Save_Btn = By.xpath("//i[@class='la la-save']");
 
-    public void Z2D_SelectSupp1() {
+    public void Z2D_Select_Supp1() {
         ElementActions.click(driver, Supp1);
     }
 
 
-    public void Z2D_SelectSupp2() {
+    public void Z2D_Select_Supp2() {
         ElementActions.click(driver, Supp2);
     }
 
-    public void ExportFile() {
+    public void Export_File() {
         ElementActions.click(driver, Export_Btn);
     }
 
-    public void Z2D_SelectFilter() {
+    public void Z2D_Select_Filter() {
         ElementActions.click(driver, SemiConFilter);
     }
 
-    public void Z2D_SuppScore() {
+    public void Z2D_Supp_Score() {
         ElementActions.click(driver, SuppScore);
     }
 
-    public void Z2D_Click_ManageColumn() {
+    public void Z2D_Click_Manage_Column() {
         ElementActions.click(driver, ManageColumns);
     }
 
-    public void Z2D_ClickHideAll() {
+    public void Z2D_Click_HideAll() {
         ElementActions.click(driver, HideAll);
     }
 
-    public void Z2D_SaveSetting() {
+    public void Z2D_Save_Setting() {
         ElementActions.click(driver, SaveColumnSetting);
     }
 
@@ -60,7 +60,7 @@ public class SupplierPage {
         ElementActions.click(driver, Exit);
     }
 
-    public void Z2D_ClickSave(){
+    public void Z2D_Click_Save(){
         ElementActions.click(driver,Save_Btn);
     }
 }

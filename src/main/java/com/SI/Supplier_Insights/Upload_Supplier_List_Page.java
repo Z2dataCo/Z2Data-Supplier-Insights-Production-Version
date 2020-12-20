@@ -9,10 +9,10 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
-public class Upload_Supplier_List_Module {
+public class Upload_Supplier_List_Page {
     private final WebDriver driver;
 
-    public Upload_Supplier_List_Module(WebDriver driver) {
+    public Upload_Supplier_List_Page(WebDriver driver) {
         this.driver = driver;
     }
 

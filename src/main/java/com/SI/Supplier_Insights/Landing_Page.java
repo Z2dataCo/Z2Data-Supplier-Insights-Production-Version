@@ -24,7 +24,7 @@ public class Landing_Page {
     public By SendTicket = By.xpath("//*[@id=\"dropbg\"]/div/div/div[2]/button");
     public By Z2DLogo = By.xpath("/html/body/app-root/parentroute-component/app-z2dataapp/div/div[1]/div[1]/a/img");
     public By SearchInput = By.id("txtMainBarSearch");
-    public By SearcValue = By.cssSelector("div[class='z2-searchbox clearfix'] li:nth-child(1) a:nth-child(1)");
+    public By Search_Value = By.cssSelector("div[class='z2-searchbox clearfix'] li:nth-child(1) a:nth-child(1)");
     public By Save_Btn = By.xpath("//*[@id=\"z2page-head-bar\"]/div/button");
     public By CreateAlert = By.xpath("//body//app-root//div[1]//div[1]//app-create-alert[1]//button[1]");
 
@@ -58,19 +58,19 @@ public class Landing_Page {
         ElementActions.click(driver, BrowseByProduct);
     }
 
-    public void Z2D_ClickSubmitTicket() {
+    public void Z2D_Click_Submit_Ticket() {
         ElementActions.click(driver, SubmitTicket);
     }
 
-    public void Z2D_TicketSubject(String subject) {
+    public void Z2D_Ticket_Subject(String subject) {
         ElementActions.type(driver, Subject, subject);
     }
 
-    public void Z2D_TicketDescription(String Text) {
+    public void Z2D_Ticket_Description(String Text) {
         ElementActions.type(driver, issueArea, Text);
     }
 
-    public void Z2D_SendTicket() {
+    public void Z2D_Send_Ticket() {
         ElementActions.click(driver, SendTicket);
     }
 
@@ -78,15 +78,15 @@ public class Landing_Page {
         ElementActions.click(driver, Z2DLogo);
     }
 
-    public void Z2D_EnterSuppName(String Suppname) {
+    public void Z2D_Enter_Supplier_Name(String Suppname) {
         ElementActions.type(driver, SearchInput, Suppname);
     }
 
-    public void Z2D_SelectSearchValue() {
-        ElementActions.click(driver, SearcValue);
+    public void Z2D_Select_Search_Value() {
+        ElementActions.click(driver, Search_Value);
     }
 
-    public void Z2D_ClicOnkSaveButton() {
+    public void Z2D_Click_On_Save_Button() {
         ElementActions.click(driver, Save_Btn);
     }
 }

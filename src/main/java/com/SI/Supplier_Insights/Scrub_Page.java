@@ -5,10 +5,10 @@ import org.apache.commons.math3.analysis.function.Add;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ScrubPage {
+public class Scrub_Page {
     WebDriver driver;
 
-    public ScrubPage(WebDriver driver) {
+    public Scrub_Page(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -29,38 +29,38 @@ public class ScrubPage {
     public By lastpage = By.xpath("//*[@id=\"scrub_list\"]/div[2]/div[3]/div/pagination-component/ngb-pagination/ul/li[16]/a");
 
 
-    public void Z2D_ClickAddSupplier() {
+    public void Z2D_Click_Add_Supplier() {
         ElementActions.click(driver, AddSupplier_Btn);
     }
 
-    public void Z2D_AddSupplierName(String name) {
+    public void Z2D_Add_Supplier_Name(String name) {
         ElementActions.type(driver, InputText, name);
 
     }
 
-    public void Z2D_ClickSave() {
+    public void Z2D_Click_Save() {
         ElementActions.click(driver, Save_btn);
     }
 
-    public void Z2D_ClickToRemoveSupplier() {
+    public void Z2D_Click_To_Remove_Supplier() {
         ElementActions.click(driver, Remove_Supplier);
 
     }
 
-    public void Z2D_SelectSupplier() {
+    public void Z2D_Select_Supplier() {
         ElementActions.click(driver, SuggestionSupplier);
     }
 
 
-    public void Z2D_AddNote() {
+    public void Z2D_Add_Note() {
         ElementActions.click(driver, AddNote);
     }
 
-    public void Z2D_EnterText(String Text) {
+    public void Z2D_Enter_Text(String Text) {
         ElementActions.type(driver, TextArea, Text);
     }
 
-    public void Z2D_SaveNote() {
+    public void Z2D_Save_Note() {
         ElementActions.click(driver, AddSuccess);
     }
 
@@ -68,7 +68,7 @@ public class ScrubPage {
         ElementActions.click(driver, CloseAddNote);
     }
 
-    public void Z2D_GetLastPage(){
+    public void Z2D_Get_Last_Page(){
         ElementActions.click(driver,lastpage);
     }
 }

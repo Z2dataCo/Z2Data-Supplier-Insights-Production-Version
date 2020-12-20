@@ -1,9 +1,6 @@
 package com.SI.Supplier_Insights;
 
-import com.shaft.validation.Assertions;
 import io.qameta.allure.Description;
-import org.apache.commons.math3.analysis.function.Add;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,26 +10,26 @@ public class E_Check_Customer_able_Add_Edit extends SI_Test_Base {
     @Description("Scenario ID = [SI-7]")
     public void Z2D_Customer_authorization() {
         My_Supplier_Page My_Supplier_Obj = new My_Supplier_Page(driver);
-        ScrubPage scrubPage = new ScrubPage(driver);
+        Scrub_Page scrub_Page_obj = new Scrub_Page(driver);
         My_Supplier_Obj.Z2D_Open_Supplier_List();
         My_Supplier_Obj.Z2D_Open_Scrub_Tab();
-        Assert.assertTrue(driver.findElement(scrubPage.Total_Supplier).isDisplayed());
-        Assert.assertTrue(driver.findElement(scrubPage.Exact_Match).isDisplayed());
-        Assert.assertTrue(driver.findElement(scrubPage.No_Match).isDisplayed());
-        Assert.assertTrue(driver.findElement(scrubPage.Corrected).isDisplayed());
-        Assert.assertTrue(driver.findElement(scrubPage.ignored).isDisplayed());
-        scrubPage.Z2D_ClickAddSupplier();
-        scrubPage.Z2D_AddSupplierName("Z");
-        scrubPage.Z2D_SelectSupplier();
-        scrubPage.Z2D_ClickSave();
-        scrubPage.Z2D_GetLastPage();
-        scrubPage.Z2D_AddNote();
-        scrubPage.Z2D_EnterText("test");
-        scrubPage.Z2D_SaveNote();
-        scrubPage.Z2D_GetLastPage();
-        scrubPage.Z2D_ClickToRemoveSupplier();
-        scrubPage.Z2D_GetLastPage();
-        Assert.assertNotEquals(driver.getPageSource(),driver.findElements(scrubPage.SuggestionSupplier));
+        Assert.assertTrue(driver.findElement(scrub_Page_obj.Total_Supplier).isDisplayed());
+        Assert.assertTrue(driver.findElement(scrub_Page_obj.Exact_Match).isDisplayed());
+        Assert.assertTrue(driver.findElement(scrub_Page_obj.No_Match).isDisplayed());
+        Assert.assertTrue(driver.findElement(scrub_Page_obj.Corrected).isDisplayed());
+        Assert.assertTrue(driver.findElement(scrub_Page_obj.ignored).isDisplayed());
+        scrub_Page_obj.Z2D_Click_Add_Supplier();
+        scrub_Page_obj.Z2D_Add_Supplier_Name("Z");
+        scrub_Page_obj.Z2D_Select_Supplier();
+        scrub_Page_obj.Z2D_Click_Save();
+        scrub_Page_obj.Z2D_Get_Last_Page();
+        scrub_Page_obj.Z2D_Add_Note();
+        scrub_Page_obj.Z2D_Enter_Text("test");
+        scrub_Page_obj.Z2D_Save_Note();
+        scrub_Page_obj.Z2D_Get_Last_Page();
+        scrub_Page_obj.Z2D_Click_To_Remove_Supplier();
+        scrub_Page_obj.Z2D_Get_Last_Page();
+        Assert.assertNotEquals(driver.getPageSource(),driver.findElements(scrub_Page_obj.SuggestionSupplier));
 
     }
 
