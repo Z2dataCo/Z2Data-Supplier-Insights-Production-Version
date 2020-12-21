@@ -12,11 +12,11 @@ public class O_Manage_Column extends SI_Test_Base {
         My_Supplier_Page My_Supplier_Page_Obj = new My_Supplier_Page(driver);
         Supplier_Page Supplier_Page_Obj = new Supplier_Page(driver);
         My_Supplier_Page_Obj.Z2D_Open_Supplier_List();
-        My_Supplier_Page_Obj.Z2D_OpenSupplierTap();
+        My_Supplier_Page_Obj.Z2D_Open_Supplier_Tap();
         Supplier_Page_Obj.Z2D_Click_Manage_Column();
         Supplier_Page_Obj.Z2D_Click_HideAll();
         Supplier_Page_Obj.Z2D_Save_Setting();
-        Assert.assertTrue(driver.findElement(Supplier_Page_Obj.VerifyMsg).isDisplayed());
+        Assert.assertTrue(driver.findElement(Supplier_Page_Obj.Verify_Msg).isDisplayed());
         Supplier_Page_Obj.Z2D_Exit();
         Supplier_Page_Obj.Export_File();
 

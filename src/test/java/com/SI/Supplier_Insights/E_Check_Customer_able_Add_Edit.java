@@ -29,7 +29,7 @@ public class E_Check_Customer_able_Add_Edit extends SI_Test_Base {
         scrub_Page_obj.Z2D_Get_Last_Page();
         scrub_Page_obj.Z2D_Click_To_Remove_Supplier();
         scrub_Page_obj.Z2D_Get_Last_Page();
-        Assert.assertNotEquals(driver.getPageSource(),driver.findElements(scrub_Page_obj.SuggestionSupplier));
+        Assert.assertNotEquals(driver.getPageSource(),driver.findElements(scrub_Page_obj.Suggestion_Supplier));
 
     }
 

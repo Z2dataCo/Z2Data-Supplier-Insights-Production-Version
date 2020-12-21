@@ -11,7 +11,7 @@ public class Browse_By_Name_Page {
         this.driver = driver;
     }
 
-    public By SearchInput = By.xpath("//input[@placeholder='Search For Supplier']");
+    public By Search_Input = By.xpath("//input[@placeholder='Search For Supplier']");
     public By Search_Btn = By.xpath("//a[@Class='input-group-text btn btn-info white']");
     public By LinkForSupplier = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/tbody/tr[1]/td[2]/a");
     public By SupplierType_Tbl = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/thead/tr/th[3]");
@@ -22,17 +22,16 @@ public class Browse_By_Name_Page {
     public By SupplierScore_Tbl = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/thead/tr/th[8]");
 
 
-    public void Z2D_SupplierSearch(String value) {
-        ElementActions.type(driver, SearchInput, value);
+    public void Z2D_Supplier_Search(String value) {
+        ElementActions.type(driver, Search_Input, value);
     }
 
-    public void Z2D_ClickSearch() {
+    public void Z2D_Click_Search() {
         ElementActions.click(driver, Search_Btn);
     }
 
-    public void Z2D_ClickOnLink() {
+    public void Z2D_Click_On_Link() {
         ElementActions.click(driver, LinkForSupplier);
     }
-
 
 }
