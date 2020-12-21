@@ -17,12 +17,12 @@ public class G_Browse_Suppliers_By_Name extends SI_Test_Base {
         landing_page_Obj.Z2D_Browse_By_Name();
         browse_ByName_Obj.Z2D_Supplier_Search("3M");
         browse_ByName_Obj.Z2D_Click_Search();
-        Assert.assertTrue(driver.findElement(browse_ByName_Obj.SupplierType_Tbl).isDisplayed());
-        Assert.assertTrue(driver.findElement(browse_ByName_Obj.TotalRevenue_Tbl).isDisplayed());
-        Assert.assertTrue(driver.findElement(browse_ByName_Obj.MarketCap_Tbl).isDisplayed());
-        Assert.assertTrue(driver.findElement(browse_ByName_Obj.NetIncome_Tbl).isDisplayed());
-        Assert.assertTrue(driver.findElement(browse_ByName_Obj.OfEmployees_Tbl).isDisplayed());
-        Assert.assertTrue(driver.findElement(browse_ByName_Obj.SupplierScore_Tbl).isDisplayed());
+        Assert.assertTrue(driver.findElement(browse_ByName_Obj.Supplier_Type_Tbl).isDisplayed());
+        Assert.assertTrue(driver.findElement(browse_ByName_Obj.Total_Revenue_Tbl).isDisplayed());
+        Assert.assertTrue(driver.findElement(browse_ByName_Obj.Market_Cap_Tbl).isDisplayed());
+        Assert.assertTrue(driver.findElement(browse_ByName_Obj.Net_Income_Tbl).isDisplayed());
+        Assert.assertTrue(driver.findElement(browse_ByName_Obj.Of_Employees_Tbl).isDisplayed());
+        Assert.assertTrue(driver.findElement(browse_ByName_Obj.Supplier_Score_Tbl).isDisplayed());
         browse_ByName_Obj.Z2D_Click_On_Link();
     }
 }

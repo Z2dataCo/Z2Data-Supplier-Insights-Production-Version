@@ -13,13 +13,13 @@ public class Browse_By_Name_Page {
 
     public By Search_Input = By.xpath("//input[@placeholder='Search For Supplier']");
     public By Search_Btn = By.xpath("//a[@Class='input-group-text btn btn-info white']");
-    public By LinkForSupplier = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/tbody/tr[1]/td[2]/a");
-    public By SupplierType_Tbl = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/thead/tr/th[3]");
-    public By TotalRevenue_Tbl = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/thead/tr/th[4]");
-    public By MarketCap_Tbl = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/thead/tr/th[5]");
-    public By NetIncome_Tbl = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/thead/tr/th[6]");
-    public By OfEmployees_Tbl = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/thead/tr/th[7]");
-    public By SupplierScore_Tbl = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/thead/tr/th[8]");
+    public By Link_For_Supplier = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/tbody/tr[1]/td[2]/a");
+    public By Supplier_Type_Tbl = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/thead/tr/th[3]");
+    public By Total_Revenue_Tbl = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/thead/tr/th[4]");
+    public By Market_Cap_Tbl = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/thead/tr/th[5]");
+    public By Net_Income_Tbl = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/thead/tr/th[6]");
+    public By Of_Employees_Tbl = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/thead/tr/th[7]");
+    public By Supplier_Score_Tbl = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/thead/tr/th[8]");
 
 
     public void Z2D_Supplier_Search(String value) {
@@ -31,7 +31,7 @@ public class Browse_By_Name_Page {
     }
 
     public void Z2D_Click_On_Link() {
-        ElementActions.click(driver, LinkForSupplier);
+        ElementActions.click(driver, Link_For_Supplier);
     }
 
 }
