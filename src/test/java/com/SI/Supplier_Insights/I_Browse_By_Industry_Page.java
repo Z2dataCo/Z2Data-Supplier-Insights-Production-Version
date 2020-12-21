@@ -15,8 +15,8 @@ public class I_Browse_By_Industry_Page extends SI_Test_Base {
         landing_page_Obj.Z2D_Open_Browse_By_Industry();
         Browse_by_Industry_Obj.Z2D_Click_On_Industry();
         Browse_by_Industry_Obj.Z2D_Select_Supplier();
-        Browse_by_Industry_Obj.Z2D_Save_Info();
-        Assert.assertTrue(driver.findElement(Browse_By_Product_Obj.Verify_Msg).isDisplayed());
+        Browse_by_Industry_Obj.Z2D_SaveInfo();
+        Assert.assertTrue(driver.findElement(Browse_By_Product_Obj.VerifyMsg).isDisplayed());
     }
 
 }

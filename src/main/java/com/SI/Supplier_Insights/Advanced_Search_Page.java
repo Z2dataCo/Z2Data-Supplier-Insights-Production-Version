@@ -21,9 +21,9 @@ public class Advanced_Search_Page {
     public By ddl_Saved = By.xpath("//a[@data-z2dropdownsmenus='saved-menu']");
     public By Company_Name = By.xpath("//thead/tr[1]/td[1]");
     public By Remove = By.xpath("//i[@Class='fas fa-times mr-03']");
-    public By Strong_Filter = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[1]/table/tbody/tr/td[1]/div/div[1]/label/span");
+    public By StrongFilter = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[1]/table/tbody/tr/td[1]/div/div[1]/label/span");
     public By Clear = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[2]/div[1]/div[1]/a[1]");
-    public By Public_Filter = By.xpath("//tbody/tr[1]/td[2]/div[1]/div[1]/label[1]/span[1]");
+    public By PublicFilter = By.xpath("//tbody/tr[1]/td[2]/div[1]/div[1]/label[1]/span[1]");
     public By SuppLogo = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[4]/table/tbody/tr[1]/td[2]");
     public By Compare = By.xpath("//i[@class='z2iconfont icon-Compare mr-03']");
 
@@ -69,13 +69,16 @@ public class Advanced_Search_Page {
     }
 
     public void Z2D_Select_Strong_Filter() {
-        ElementActions.click(driver, Strong_Filter);
+        ElementActions.click(driver, StrongFilter);
     }
 
-    public void Z2D_Clear_Check_Box() { ElementActions.click(driver, Clear); }
+    public void Z2D_Clear_Check_Box() {
+        ElementActions.click(driver, Clear);
+
+    }
 
     public void Z2D_Select_Public_Filter() {
-        ElementActions.click(driver, Public_Filter);
+        ElementActions.click(driver, PublicFilter);
     }
 
     public void Z2D_Supplier_Profile() {

@@ -12,7 +12,7 @@ public class Browse_By_Industry_Page {
     }
 
     public By Search_input = By.xpath("//input[@placeholder='Search within Industries']");
-    public By Product_Name = By.xpath("//a[@ng-reflect-router-link='/Company/1291160']");
+    public By ProductName = By.xpath("//a[@ng-reflect-router-link='/Company/1291160']");
     public By Industry = By.partialLinkText("3D Printing & Additi");
     public By CheckBox_Supplier = By.xpath("//tbody/tr[1]/td[1]/input[1]");
     public By Save_Btn = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[2]/div[1]/div[1]/a[3]");
@@ -25,8 +25,9 @@ public class Browse_By_Industry_Page {
         ElementActions.click(driver, CheckBox_Supplier);
     }
 
-    public void Z2D_Save_Info() {
+    public void Z2D_SaveInfo() {
         ElementActions.click(driver, Save_Btn);
     }
+
 
 }

@@ -46,6 +46,7 @@ public class Upload_Supplier_List_Page {
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.delay(200);
         robot.keyRelease(KeyEvent.VK_ENTER);
+
     }
 
     public void Z2D_Click_Next_for_Upload() {

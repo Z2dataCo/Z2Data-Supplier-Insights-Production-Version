@@ -12,7 +12,7 @@ public class L_Export_Supplier_List extends SI_Test_Base {
         My_Supplier_Page My_Supplier_Page_Obj = new My_Supplier_Page(driver);
         Supplier_Page Supplier_Page_Obj = new Supplier_Page(driver);
         My_Supplier_Page_Obj.Z2D_Open_Supplier_List();
-        My_Supplier_Page_Obj.Z2D_Open_Supplier_Tap();
+        My_Supplier_Page_Obj.Z2D_OpenSupplierTap();
         Supplier_Page_Obj.Z2D_Select_Supp1();
         Supplier_Page_Obj.Z2D_Select_Supp2();
         Supplier_Page_Obj.Export_File();
