@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -97,15 +98,18 @@ public class SI_Test_Base {
         Refresh();
         WaitAllElement();
 
+
     }
 
     public void Switch() {
         ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tab2.get(0));
+        WaitAllElement();
         driver.switchTo().window(tab2.get(1));
+        WaitAllElement();
         driver.switchTo().window(tab2.get(0));
-
     }
+
 
 
 }

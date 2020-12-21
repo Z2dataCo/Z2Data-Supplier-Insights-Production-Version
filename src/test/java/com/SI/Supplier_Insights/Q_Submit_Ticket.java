@@ -1,6 +1,7 @@
 package com.SI.Supplier_Insights;
 
 import io.qameta.allure.Description;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Q_Submit_Ticket extends SI_Test_Base {
@@ -13,5 +14,6 @@ public class Q_Submit_Ticket extends SI_Test_Base {
         landing_Page_Obj.Z2D_Ticket_Subject("subject");
         landing_Page_Obj.Z2D_Ticket_Description("automation");
         landing_Page_Obj.Z2D_Send_Ticket();
+        Assert.assertTrue(driver.findElement(landing_Page_Obj.Verify_MSG).isDisplayed());
     }
 }

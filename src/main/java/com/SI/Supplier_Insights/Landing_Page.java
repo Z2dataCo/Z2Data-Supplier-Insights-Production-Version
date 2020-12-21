@@ -27,6 +27,7 @@ public class Landing_Page {
     public By Search_Value = By.cssSelector("div[class='z2-searchbox clearfix'] li:nth-child(1) a:nth-child(1)");
     public By Save_Btn = By.xpath("//*[@id=\"z2page-head-bar\"]/div/button");
     public By CreateAlert = By.xpath("//body//app-root//div[1]//div[1]//app-create-alert[1]//button[1]");
+    public By Verify_MSG = By.xpath("//*[@id=\"toast-container\"]/div/div[2]");
 
     public void Z2D_Open_My_Supplier() {
         ElementActions.click(driver, MySupplier);

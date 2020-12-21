@@ -3,6 +3,9 @@ package com.SI.Supplier_Insights;
 import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+
+import java.util.ArrayList;
 
 public class Compare_Page {
     WebDriver driver;
@@ -52,4 +55,16 @@ public class Compare_Page {
         ElementActions.click(driver, SearchValue4);
     }
 
+
+    public void Validate_Compare() throws InterruptedException {
+
+        ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tab2.get(0));
+        driver.switchTo().window(tab2.get(1));
+        Thread.sleep(10000);
+        Assert.assertTrue(driver.getPageSource().contains("Microsoft Corporation"));
+        Assert.assertTrue(driver.getPageSource().contains("Amazon.com, Inc."));
+        driver.switchTo().window(tab2.get(0));
+
+    }
 }
