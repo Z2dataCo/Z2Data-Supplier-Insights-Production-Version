@@ -16,7 +16,7 @@ public class O_Manage_Column extends SI_Test_Base {
         Supplier_Page_Obj.Z2D_Click_Manage_Column();
         Supplier_Page_Obj.Z2D_Click_HideAll();
         Supplier_Page_Obj.Z2D_Save_Setting();
-        Assert.assertTrue(driver.findElement(Supplier_Page_Obj.VerifyMsg).isDisplayed());
+        Assert.assertTrue(driver.findElement(Supplier_Page_Obj.Verify_Msg).isDisplayed());
         Supplier_Page_Obj.Z2D_Exit();
         Supplier_Page_Obj.Export_File();
 

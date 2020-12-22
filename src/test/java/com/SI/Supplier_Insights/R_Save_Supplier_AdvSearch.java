@@ -4,7 +4,7 @@ import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class R_Save_Supplier_AdvSearch extends SI_Test_Base {
+public class    R_Save_Supplier_AdvSearch extends SI_Test_Base {
     @Test
 
     @Description("Scenario ID = [SI-22]")
@@ -16,11 +16,11 @@ public class R_Save_Supplier_AdvSearch extends SI_Test_Base {
         advancedSearchPage.Z2D_Select_Supp1();
         advancedSearchPage.Z2D_Select_Supp2();
         advancedSearchPage.Z2D_ClickSave();
-        Assert.assertTrue(driver.findElement(supplierPage.VerifyMsg).isDisplayed());
+        Assert.assertTrue(driver.findElement(supplierPage.Verify_Msg).isDisplayed());
         advancedSearchPage.Open_Drop_Down_List();
         advancedSearchPage.Z2D_Select_All();
         advancedSearchPage.Z2D_Click_Remove();
-        Assert.assertTrue(driver.findElement(supplierPage.VerifyMsg).isDisplayed());
+        Assert.assertTrue(driver.findElement(supplierPage.Verify_Msg).isDisplayed());
         advancedSearchPage.Open_Drop_Down_List();
 
 

@@ -40,7 +40,7 @@ public class E_Check_Customer_able_Add_Edit extends SI_Test_Base {
         int NewExpected = Actual_result - 1;
         Assert.assertEquals(Actual_result - 1, NewExpected);
         scrub_Page_obj.Z2D_Get_Last_Page();
-        Assert.assertNotEquals(driver.getPageSource(), driver.findElements(scrub_Page_obj.SuggestionSupplier));
+        Assert.assertNotEquals(driver.getPageSource(), driver.findElements(scrub_Page_obj.Suggestion_Supplier));
 
     }
 

@@ -16,15 +16,15 @@ public class U_Suppliers_Details extends SI_Test_Base {
         advanced_Search_Page_Obj.Z2D_Supplier_Profile();
         Switch_Tabs();
         Supplier_Details_Page_Obj.Z2D_ClickSave();
-        Assert.assertTrue(driver.findElement(Supplier_Page_Obj.VerifyMsg).isDisplayed());
+        Assert.assertTrue(driver.findElement(Supplier_Page_Obj.Verify_Msg).isDisplayed());
         advanced_Search_Page_Obj.Open_Drop_Down_List();
         advanced_Search_Page_Obj.Z2D_Select_All();
         advanced_Search_Page_Obj.Z2D_Click_Compare();
         Switch();
         advanced_Search_Page_Obj.Z2D_Click_Remove();
-        Assert.assertTrue(driver.findElement(Supplier_Page_Obj.VerifyMsg).isDisplayed());
+        Assert.assertTrue(driver.findElement(Supplier_Page_Obj.Verify_Msg).isDisplayed());
         advanced_Search_Page_Obj.Open_Drop_Down_List();
-        Assert.assertTrue(driver.findElement(Supplier_Page_Obj.VerifyMsg).isDisplayed());
+        Assert.assertTrue(driver.findElement(Supplier_Page_Obj.Verify_Msg).isDisplayed());
 
     }
 

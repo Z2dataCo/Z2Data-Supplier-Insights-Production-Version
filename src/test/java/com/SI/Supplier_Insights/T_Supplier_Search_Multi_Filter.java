@@ -1,5 +1,6 @@
 package com.SI.Supplier_Insights;
 
+import com.shaft.gui.element.ElementActions;
 import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -21,11 +22,9 @@ public class T_Supplier_Search_Multi_Filter extends SI_Test_Base {
         advanced_Search_Page_Obj.Z2D_Compare_Advanced_Search();
         Compare_Obj.Validate_Compare();
         advanced_Search_Page_Obj.Z2D_ClickSave();
-        Thread.sleep(3000);
-        Assert.assertTrue(driver.findElement(supplierPage.VerifyMsg).isDisplayed());
+        ElementActions.waitForElementToBePresent(driver,supplierPage.Verify_Msg,5,true);
+        Assert.assertTrue(driver.findElement(supplierPage.Verify_Msg).isDisplayed());
         advanced_Search_Page_Obj.Z2D_Clear_Check_Box();
         WaitAllElement();
-
-
     }
 }

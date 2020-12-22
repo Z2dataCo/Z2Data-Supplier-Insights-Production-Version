@@ -33,21 +33,23 @@ public class Browse_By_Name_Page {
 
     public void Z2D_Click_Search() {
         ElementActions.click(driver, Search_Btn);
+        ElementActions.waitForElementToBePresent(driver,Supplier_Type_Tbl,10,true);
     }
 
     public void Z2D_Click_On_Link() {
         ElementActions.click(driver, Link_For_Supplier);
     }
-    public void Assert_On_New_Tap() throws InterruptedException {
+
+    public void Assert_On_New_Tap() {
         Browse_By_Name_Page browse_ByName_Obj = new Browse_By_Name_Page(driver);
         ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
-        driver.switchTo().window(tab2.get(0));
+        //driver.switchTo().window(tab2.get(0));
         driver.switchTo().window(tab2.get(1));
-        Thread.sleep(5000);
+        ElementActions.waitForElementToBePresent(driver,Supplier_Logo,10,true);
+        //Thread.sleep(5000);
         Assert.assertTrue(driver.findElement(browse_ByName_Obj.Supplier_Logo).isDisplayed());
         driver.close();
         driver.switchTo().window(tab2.get(0));
-
     }
 
 

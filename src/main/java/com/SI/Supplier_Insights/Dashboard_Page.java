@@ -23,45 +23,24 @@ public class Dashboard_Page {
     public By Table_Count = By.xpath("//*[@id=\"z2tableA-contain\"]/div[2]/div[2]/div[2]/span[2]");
 
     public By Total_Supplier_Graph = By.xpath("//div[contains(text(),'Total Suppliers')]");
+
     public By Supplier_Status_Graph = By.xpath("//div[contains(text(),'Supplier Status')]");
-    public void Z2D_Open_High_Risk() {
-        ElementActions.click(driver, High_Risk);
 
-    }
+    public void Z2D_Open_High_Risk() { ElementActions.click(driver, High_Risk); }
 
-    public void Z2D_Open_Medium_Risk() {
-        ElementActions.click(driver, Medium_Risk);
+    public void Z2D_Open_Medium_Risk() { ElementActions.click(driver, Medium_Risk); }
 
-    }
-
-
-    public void Z2D_Open_Low_Risk() {
-        ElementActions.click(driver, Low_Risk);
-
-    }
+    public void Z2D_Open_Low_Risk() { ElementActions.click(driver, Low_Risk); }
 
     public void Z2D_Open_Countries() {
         ElementActions.click(driver, Countries);
     }
 
-    public void Z2D_Open_Public_Companies() {
-        ElementActions.click(driver, Public_Companies);
+    public void Z2D_Open_Public_Companies() { ElementActions.click(driver, Public_Companies); }
 
-    }
+    public void Z2D_Open_Private_Companies() { ElementActions.click(driver, Private_Companies); }
 
-    public void Z2D_Open_Private_Companies() {
-        ElementActions.click(driver, Private_Companies);
+    public void Z2D_Subsidiary_Companies() { ElementActions.click(driver, Subsidiary_Companies); }
 
-    }
-
-    public void Z2D_Subsidiary_Companies() {
-        ElementActions.click(driver, Subsidiary_Companies);
-
-    }
-
-    public void Z2D_Open_Alerts() {
-        ElementActions.click(driver, Alerts);
-
-    }
-
+    public void Z2D_Open_Alerts() { ElementActions.click(driver, Alerts); }
 }
