@@ -1,5 +1,6 @@
 package com.SI.Supplier_Insights;
 
+import com.shaft.gui.browser.BrowserActions;
 import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -44,6 +45,7 @@ public class Browse_By_Name_Page {
         driver.switchTo().window(tab2.get(1));
         Thread.sleep(5000);
         Assert.assertTrue(driver.findElement(browse_ByName_Obj.Supplier_Logo).isDisplayed());
+        driver.close();
         driver.switchTo().window(tab2.get(0));
 
     }

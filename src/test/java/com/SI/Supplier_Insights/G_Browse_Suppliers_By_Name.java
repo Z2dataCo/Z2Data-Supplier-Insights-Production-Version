@@ -13,7 +13,7 @@ public class G_Browse_Suppliers_By_Name extends SI_Test_Base {
         Landing_Page landing_page_Obj = new Landing_Page(driver);
         Browse_By_Name_Page browse_ByName_Obj = new Browse_By_Name_Page(driver);
         landing_page_Obj.Z2D_Open_Browse_Tab();
-        landing_page_Obj.Z2D_Browse_By_Name();
+        landing_page_Obj.Z2D_BrowseByName();
         browse_ByName_Obj.Z2D_Supplier_Search("3M");
         browse_ByName_Obj.Z2D_Click_Search();
         Thread.sleep(5000);
