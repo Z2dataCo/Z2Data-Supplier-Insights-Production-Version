@@ -22,11 +22,11 @@ public class F_Create_Report extends SI_Test_Base {
         reportObj.Z2D_Save_Report();
         reportObj.Z2D_Enter_Report_Name(Name);
         reportObj.Z2D_Submit_Report();
-        Assert.assertTrue(driver.findElement(reportObj.verify_Msg).isDisplayed());
+        Assert.assertTrue(driver.findElement(reportObj.verifyMsg).isDisplayed());
         reportObj.Z2D_Email_Report();
         reportObj.Z2D_Enter_Email(Email);
         reportObj.Z2D_Submit_Email();
-        Assert.assertTrue(driver.findElement(reportObj.verify_Msg).isDisplayed());
+        Assert.assertTrue(driver.findElement(reportObj.verifyMsg).isDisplayed());
 
     }
 }

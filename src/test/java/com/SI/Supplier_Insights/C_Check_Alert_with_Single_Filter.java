@@ -13,6 +13,7 @@ public class C_Check_Alert_with_Single_Filter extends SI_Test_Base {
         My_Supplier_Obj.Z2D_Open_Supplier_List();
         My_Supplier_Obj.Z2D_Open_Alert_Tab();
         My_Supplier_Obj.Z2D_Select_Filter();
+        My_Supplier_Obj.Z2D_Data_Assertion();
         Assert.assertTrue(driver.getPageSource().contains("Litigation"));
     }
 }

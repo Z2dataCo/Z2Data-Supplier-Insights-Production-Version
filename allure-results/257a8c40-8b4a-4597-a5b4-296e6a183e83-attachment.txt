@@ -1,0 +1,13 @@
+[ReportManager] File Action [getAbsolutePath] successfully performed. With the following test data [Relative Folder Path: "target/downloadedFiles/"]. @21-12-2020 13:52:43.0127 PM
+[ReportManager] Attempting to run locally on: [Windows-64], [GoogleChrome]. @21-12-2020 13:52:43.0203 PM
+[ReportManager] Identifying OS/Browser combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time... @21-12-2020 13:52:43.0206 PM
+[ReportManager] Successfully Opened Google Chrome. @21-12-2020 13:52:47.0607 PM
+[ReportManager] Target URL: [https://suppliers.z2data.com/] @21-12-2020 13:52:47.0621 PM
+[ReportManager] Initial URL: [data:,] @21-12-2020 13:52:47.0933 PM
+[ReportManager] File Action [createFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20201221-135242", Target File: "\1608551596756_StartDriver.gif"]. @21-12-2020 13:53:16.0913 PM
+[ReportManager] Browser Action [navigateToURL] successfully performed. With the following test data [https://suppliers.z2data.com/]. @21-12-2020 13:53:17.0987 PM
+[ReportManager] Element Action [type] successfully performed. With the following test data [m.sultan@z2data.com]. @21-12-2020 13:53:30.0940 PM
+[ReportManager] Element Action [type] successfully performed. With the following test data [M.sultan@z2data.com]. @21-12-2020 13:53:31.0436 PM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Sign in]. @21-12-2020 13:53:37.0433 PM
+[ReportManager] Successfully created attachment [Video Recording - StartDriver] @21-12-2020 13:53:48.0907 PM
+[ReportManager] Successfully created attachment [Animated Gif - StartDriver] @21-12-2020 13:53:48.0986 PM
