@@ -3,9 +3,6 @@ package com.SI.Supplier_Insights;
 import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
-
-import java.util.ArrayList;
 
 public class Advanced_Search_Page {
     WebDriver driver;
@@ -24,10 +21,10 @@ public class Advanced_Search_Page {
     public By ddl_Saved = By.xpath("//a[@data-z2dropdownsmenus='saved-menu']");
     public By Company_Name = By.xpath("//thead/tr[1]/td[1]");
     public By Remove = By.xpath("//i[@Class='fas fa-times mr-03']");
-    public By StrongFilter = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[1]/table/tbody/tr/td[1]/div/div[1]/label/span");
+    public By Strong_Filter = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[1]/table/tbody/tr/td[1]/div/div[1]/label/span");
     public By Clear = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[2]/div[1]/div[1]/a[1]");
-    public By PublicFilter = By.xpath("//tbody/tr[1]/td[2]/div[1]/div[1]/label[1]/span[1]");
-    public By SuppLogo = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[4]/table/tbody/tr[1]/td[2]");
+    public By Public_Filter = By.xpath("//tbody/tr[1]/td[2]/div[1]/div[1]/label[1]/span[1]");
+    public By Supp_Logo = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[4]/table/tbody/tr[1]/td[2]");
     public By Compare = By.xpath("//i[@class='z2iconfont icon-Compare mr-03']");
     public By Last_Filter = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[1]/table/thead/tr/th[9]");
 
@@ -73,7 +70,7 @@ public class Advanced_Search_Page {
     }
 
     public void Z2D_Select_Strong_Filter() {
-        ElementActions.click(driver, StrongFilter);
+        ElementActions.click(driver, Strong_Filter);
     }
 
     public void Z2D_Clear_Check_Box() {
@@ -82,11 +79,11 @@ public class Advanced_Search_Page {
     }
 
     public void Z2D_Select_Public_Filter() {
-        ElementActions.click(driver, PublicFilter);
+        ElementActions.click(driver, Public_Filter);
     }
 
     public void Z2D_Supplier_Profile() {
-        ElementActions.click(driver, SuppLogo);
+        ElementActions.click(driver, Supp_Logo);
     }
 
 

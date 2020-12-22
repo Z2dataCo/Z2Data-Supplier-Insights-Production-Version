@@ -15,7 +15,7 @@ public class P_Save_Supplier_Profile extends SI_Test_Base {
         Supplier_Page_Obj.Z2D_Select_Supp1();
         Supplier_Page_Obj.Z2D_Select_Supp2();
         Supplier_Page_Obj.Z2D_Click_Save();
-        Assert.assertTrue(driver.findElement(Supplier_Page_Obj.VerifyMsg).isDisplayed());
+        Assert.assertTrue(driver.findElement(Supplier_Page_Obj.Verify_Msg).isDisplayed());
     }
 
 }
