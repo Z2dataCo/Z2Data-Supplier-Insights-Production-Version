@@ -4,8 +4,6 @@ import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
 public class L_Export_Supplier_List extends SI_Test_Base {
-
-
     @Test
     @Description("Scenario ID = [SI-17]")
     public void Export_List() {

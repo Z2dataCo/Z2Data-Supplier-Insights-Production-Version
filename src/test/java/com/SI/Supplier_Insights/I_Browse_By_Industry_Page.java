@@ -3,7 +3,6 @@ package com.SI.Supplier_Insights;
 import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 public class I_Browse_By_Industry_Page extends SI_Test_Base {
     @Test
     @Description("Scenario ID = [SI-12]")
@@ -18,5 +17,4 @@ public class I_Browse_By_Industry_Page extends SI_Test_Base {
         Browse_by_Industry_Obj.Z2D_SaveInfo();
         Assert.assertTrue(driver.findElement(Browse_By_Product_Obj.Verify_Msg).isDisplayed());
     }
-
 }

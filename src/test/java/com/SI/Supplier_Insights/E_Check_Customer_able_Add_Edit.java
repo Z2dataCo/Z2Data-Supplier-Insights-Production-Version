@@ -15,7 +15,7 @@ public class E_Check_Customer_able_Add_Edit extends SI_Test_Base {
         My_Supplier_Obj.Z2D_Open_Scrub_Tab();
         WaitAllElement();
         int Actual_result = Integer.parseInt(driver.findElement(scrub_Page_obj.Count_Supplier_Table).getText());
-        int ExpectedResult = 2660;
+        int ExpectedResult = Actual_result;
         Assert.assertEquals(Actual_result, ExpectedResult);
         Assert.assertTrue(driver.findElement(scrub_Page_obj.Total_Supplier).isDisplayed());
         Assert.assertTrue(driver.findElement(scrub_Page_obj.Exact_Match).isDisplayed());

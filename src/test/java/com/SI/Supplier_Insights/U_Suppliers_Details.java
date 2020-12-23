@@ -1,5 +1,7 @@
 package com.SI.Supplier_Insights;
 
+import com.shaft.gui.element.ElementActions;
+import com.sun.jna.platform.win32.OaIdl;
 import io.qameta.allure.Description;
 import org.junit.Assert;
 import org.testng.annotations.Test;
@@ -16,6 +18,7 @@ public class U_Suppliers_Details extends SI_Test_Base {
         advanced_Search_Page_Obj.Z2D_Supplier_Profile();
         Switch_Tabs();
         Supplier_Details_Page_Obj.Z2D_ClickSave();
+        ElementActions.waitForElementToBePresent(driver,Supplier_Page_Obj.Verify_Msg,10,true);
         Assert.assertTrue(driver.findElement(Supplier_Page_Obj.Verify_Msg).isDisplayed());
         advanced_Search_Page_Obj.Open_Drop_Down_List();
         advanced_Search_Page_Obj.Z2D_Select_All();

@@ -2,10 +2,12 @@ package com.SI.Supplier_Insights;
 
 import com.shaft.gui.browser.BrowserActions;
 import com.shaft.gui.browser.BrowserFactory;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -21,10 +23,11 @@ import java.util.concurrent.TimeUnit;
 
 public class SI_Test_Base {
     public static WebDriver driver;
+
     @BeforeSuite
     public void StartDriver() {
-        driver = BrowserFactory.getBrowser(BrowserFactory.BrowserType.GOOGLE_CHROME,new ChromeOptions().addArguments("--headless"));
-        BrowserActions.navigateToURL(driver, "https://suppliers.z2data.com/");
+        driver = BrowserFactory.getBrowser(BrowserFactory.BrowserType.GOOGLE_CHROME);
+        driver.navigate().to("https://suppliers.z2data.com/");
         login();
     }
 
@@ -40,13 +43,17 @@ public class SI_Test_Base {
         Login_Obj.Z2D_SignIn();
     }
 
-    public static void WaitAllElement() { driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); }
+    public static void WaitAllElement() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
 
     public static void DeleteCookies() {
         driver.manage().deleteAllCookies();
     }
 
-    public static void Refresh() { driver.navigate().refresh(); }
+    public static void Refresh() {
+        driver.navigate().refresh();
+    }
 
     @AfterMethod
     public void Back_To_Landing(ITestResult result) {

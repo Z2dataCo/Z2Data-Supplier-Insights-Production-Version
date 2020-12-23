@@ -16,9 +16,10 @@ public class J_Compare_Advanced_Search_Page extends SI_Test_Base {
         advanced_Search_Obj.Z2D_Select_Supp2();
         advanced_Search_Obj.Z2D_Select_Supp3();
         advanced_Search_Obj.Z2D_Select_Supp4();
+        Assert.assertTrue(driver.findElement(advanced_Search_Obj.Selected_Box).isSelected());
         advanced_Search_Obj.Z2D_Compare_Advanced_Search();
         Switch_Tabs();
-        Assert.assertTrue(driver.getCurrentUrl().contains("1002120,1005481,1000376,1003387"));
+        Assert.assertTrue(driver.getCurrentUrl().contains("Compare?CompanyIds"));
 
     }
 
