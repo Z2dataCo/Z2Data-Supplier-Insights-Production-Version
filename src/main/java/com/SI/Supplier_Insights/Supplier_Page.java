@@ -48,6 +48,7 @@ public class Supplier_Page {
     }
 
     public void Z2D_Click_HideAll() {
+        ElementActions.waitForElementToBePresent(driver,Hide_All,5,true);
         ElementActions.click(driver, Hide_All);
     }
 

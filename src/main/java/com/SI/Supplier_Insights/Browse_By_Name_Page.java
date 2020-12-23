@@ -1,6 +1,5 @@
 package com.SI.Supplier_Insights;
 
-import com.shaft.gui.browser.BrowserActions;
 import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -43,10 +42,8 @@ public class Browse_By_Name_Page {
     public void Assert_On_New_Tap() {
         Browse_By_Name_Page browse_ByName_Obj = new Browse_By_Name_Page(driver);
         ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
-        //driver.switchTo().window(tab2.get(0));
         driver.switchTo().window(tab2.get(1));
         ElementActions.waitForElementToBePresent(driver,Supplier_Logo,10,true);
-        //Thread.sleep(5000);
         Assert.assertTrue(driver.findElement(browse_ByName_Obj.Supplier_Logo).isDisplayed());
         driver.close();
         driver.switchTo().window(tab2.get(0));

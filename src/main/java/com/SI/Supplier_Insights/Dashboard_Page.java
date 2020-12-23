@@ -3,7 +3,6 @@ package com.SI.Supplier_Insights;
 import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 
 public class Dashboard_Page {
     private final WebDriver driver;

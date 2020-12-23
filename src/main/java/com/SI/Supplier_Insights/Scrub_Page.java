@@ -21,7 +21,7 @@ public class Scrub_Page {
     public By Suggestion_Supplier = By.xpath("//*[@id=\"ScrubAddSuppliers\"]/div/div/div[2]/div/div/div[1]/div/div/ng-autocomplete/div[1]/div[2]/ul/li[1]/div/a");
     public By Save_btn = By.xpath("//*[@id=\"ScrubAddSuppliers\"]/div/div/div[3]/button[1]");
     public By Remove_Supplier = By.xpath("//*[@id=\"scrub_list\"]/div[3]/table/tbody/tr[1]/td[11]/div/a[3]");
-    public By Add_Note = By.xpath("//*[@id=\"scrub_list\"]/div[3]/table/tbody/tr/td[11]/div/a[4]");
+    public By Add_Note = By.xpath("//div[@id='scrub_list']//tr[1]/td[11]//a[4]");
     public By Text_Area = By.xpath("//*[@id=\"scrubAddNote\"]/div/div/div[2]/textarea");
     public By Add_Success = By.xpath("//*[@id=\"scrubAddNote\"]/div/div/div[3]/button[1]");
     public By Close_Add_Note = By.xpath("//*[@id=\"scrubAddNote\"]/div/div/div[1]/button");

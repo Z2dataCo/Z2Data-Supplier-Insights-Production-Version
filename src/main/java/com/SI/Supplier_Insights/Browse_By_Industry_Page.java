@@ -27,5 +27,4 @@ public class Browse_By_Industry_Page {
         ElementActions.click(driver, Save_Btn);
     }
 
-
 }

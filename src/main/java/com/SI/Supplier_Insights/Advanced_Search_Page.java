@@ -11,7 +11,6 @@ public class Advanced_Search_Page {
         this.driver = driver;
     }
 
-
     public By Supp1 = By.xpath("//tbody/tr[1]/td[1]/input[1]");
     public By Supp2 = By.xpath("//tbody/tr[2]/td[1]/input[1]");
     public By Supp3 = By.xpath("//tbody/tr[3]/td[1]/input[1]");
@@ -30,18 +29,22 @@ public class Advanced_Search_Page {
 
 
     public void Z2D_Select_Supp1() {
+        ElementActions.waitForElementToBePresent(driver,Supp1,5,true);
         ElementActions.click(driver, Supp1);
     }
 
     public void Z2D_Select_Supp2() {
+        ElementActions.waitForElementToBePresent(driver,Supp2,5,true);
         ElementActions.click(driver, Supp2);
     }
 
     public void Z2D_Select_Supp3() {
+        ElementActions.waitForElementToBePresent(driver,Supp3,5,true);
         ElementActions.click(driver, Supp3);
     }
 
     public void Z2D_Select_Supp4() {
+        ElementActions.waitForElementToBePresent(driver,Supp4,5,true);
         ElementActions.click(driver, Supp4);
     }
 
@@ -73,10 +76,7 @@ public class Advanced_Search_Page {
         ElementActions.click(driver, Strong_Filter);
     }
 
-    public void Z2D_Clear_Check_Box() {
-        ElementActions.click(driver, Clear);
-
-    }
+    public void Z2D_Clear_Check_Box() { ElementActions.click(driver, Clear); }
 
     public void Z2D_Select_Public_Filter() {
         ElementActions.click(driver, Public_Filter);

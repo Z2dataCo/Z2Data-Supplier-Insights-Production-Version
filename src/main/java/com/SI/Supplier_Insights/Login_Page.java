@@ -32,7 +32,6 @@ public class Login_Page {
         ElementActions.type(driver, Input_Text_Box, "m.sultan@z2data.com");
         ElementActions.type(driver, Input_Pass, "M.sultan@z2data.com");
         ElementActions.click(driver, SignIn_Btn);
-
     }
 }
 

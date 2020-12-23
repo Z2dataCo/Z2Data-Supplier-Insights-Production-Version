@@ -29,6 +29,7 @@ public class Report_Page {
     }
 
     public void Z2D_Enter_Report_Name(String Name) {
+        ElementActions.waitForElementToBePresent(driver,Report_Input,5,true);
         ElementActions.type(driver, Report_Input, Name);
     }
 

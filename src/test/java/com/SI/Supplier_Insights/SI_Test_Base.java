@@ -2,15 +2,11 @@ package com.SI.Supplier_Insights;
 
 import com.shaft.gui.browser.BrowserActions;
 import com.shaft.gui.browser.BrowserFactory;
-import io.cucumber.java.jv.Lan;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -21,15 +17,13 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class SI_Test_Base {
     public static WebDriver driver;
-
     @BeforeSuite
     public void StartDriver() {
-        driver = BrowserFactory.getBrowser(BrowserFactory.BrowserType.GOOGLE_CHROME);
+        driver = BrowserFactory.getBrowser(BrowserFactory.BrowserType.GOOGLE_CHROME,new ChromeOptions().addArguments("--headless"));
         BrowserActions.navigateToURL(driver, "https://suppliers.z2data.com/");
         login();
     }
@@ -46,18 +40,13 @@ public class SI_Test_Base {
         Login_Obj.Z2D_SignIn();
     }
 
-    public static void WaitAllElement() {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-    }
+    public static void WaitAllElement() { driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); }
 
     public static void DeleteCookies() {
         driver.manage().deleteAllCookies();
     }
 
-    public static void Refresh() {
-        driver.navigate().refresh();
-    }
+    public static void Refresh() { driver.navigate().refresh(); }
 
     @AfterMethod
     public void Back_To_Landing(ITestResult result) {
@@ -71,7 +60,6 @@ public class SI_Test_Base {
             } catch (Exception e) {
                 System.out.println("Exception while taking screenshot " + e.getMessage());
             }
-
         }
         WaitAllElement();
         String URL = driver.getCurrentUrl();
@@ -92,13 +80,10 @@ public class SI_Test_Base {
         Login_Obj.Tear_Down();
     }
 
-
     @BeforeMethod
     public void WaitElement() {
         Refresh();
         WaitAllElement();
-
-
     }
 
     public void Switch() {
@@ -109,7 +94,4 @@ public class SI_Test_Base {
         WaitAllElement();
         driver.switchTo().window(tab2.get(0));
     }
-
-
-
 }
