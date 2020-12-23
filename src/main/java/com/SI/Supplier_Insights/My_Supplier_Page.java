@@ -12,7 +12,7 @@ public class My_Supplier_Page {
         this.driver = driver;
     }
 
-    public By Supplier_List = By.partialLinkText("Hadeer_ Supplier Li");
+    public By Supplier_List = By.xpath("//*[@id=\"tblSupplierList\"]/tbody/tr[2]/td[1]/div/a");
     public By DashBoard_Tab = By.xpath("//*[@id=\"z2tableA-contain\"]/div[1]/ul/li[1]/a");
     public By Suppliers_Tab = By.linkText("Suppliers");
     public By Alert_Tab = By.linkText("Alerts");
@@ -26,6 +26,12 @@ public class My_Supplier_Page {
     public void Z2D_Data_Assertion() {
         for (int i = 1; i >= 25; i++) {
             Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"z2tableA-contain\"]/div[3]/table/tbody/tr[" + i + "]/td[2]//a")).getText(), "Intel Corpration"); }
+    }
+
+    public void Assert_On_Logo(){
+        for (int i = 1; i >= 25; i++) {
+            Assert.assertTrue(driver.findElement(By.xpath("//*[@id=\"z2tableA-contain\"]/div[3]/table/tbody/tr["+i+"]/td[1]//img")).isDisplayed());
+        }
     }
 
     public void Z2D_Open_Supplier_List() {

@@ -26,6 +26,7 @@ public class Advanced_Search_Page {
     public By Supp_Logo = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[4]/table/tbody/tr[1]/td[2]");
     public By Compare = By.xpath("//i[@class='z2iconfont icon-Compare mr-03']");
     public By Last_Filter = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[1]/table/thead/tr/th[9]");
+    public By Selected_Box = By.xpath("//*[@id=\"listchecked\"][@ng-reflect-model='true']");
 
 
     public void Z2D_Select_Supp1() {

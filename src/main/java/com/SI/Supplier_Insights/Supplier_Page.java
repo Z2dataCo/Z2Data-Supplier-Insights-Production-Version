@@ -10,10 +10,9 @@ public class Supplier_Page {
     public Supplier_Page(WebDriver driver) {
         this.driver = driver;
     }
-
     public By Export_Btn = By.xpath("//*[@id=\"z2tableA-contain\"]/div[2]/div[2]/div[1]/a[4]");
-    public By Supp1 = By.xpath("//tbody/tr[1]/td[1]/input[1]");
-    public By Supp2 = By.xpath("//tbody/tr[2]/td[1]/input[1]");
+    public By Supp1 = By.cssSelector("tr:nth-child(1) > td:nth-child(1) > input");
+    public By Supp2 = By.cssSelector("tr:nth-child(2) > td:nth-child(1) > input");
     public By Semi_Con_Filter = By.xpath("//label[@for=\"chk_SupplierIndustries_0\"]");
     public By Supp_Score = By.xpath("//label[@for=\"chk_SupplierScores_0\"]");
     public By Manage_Columns = By.xpath("//button[@class=\"z2actionbtnA z2actionbtnleft btn-managecolslink_draged\"]");
@@ -48,7 +47,7 @@ public class Supplier_Page {
     }
 
     public void Z2D_Click_HideAll() {
-        ElementActions.waitForElementToBePresent(driver,Hide_All,5,true);
+        ElementActions.waitForElementToBePresent(driver, Hide_All, 5, true);
         ElementActions.click(driver, Hide_All);
     }
 
@@ -60,7 +59,7 @@ public class Supplier_Page {
         ElementActions.click(driver, Exit);
     }
 
-    public void Z2D_Click_Save(){
-        ElementActions.click(driver,Save_Btn);
+    public void Z2D_Click_Save() {
+        ElementActions.click(driver, Save_Btn);
     }
 }

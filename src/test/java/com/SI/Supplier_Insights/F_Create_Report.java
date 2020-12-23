@@ -1,6 +1,7 @@
 package com.SI.Supplier_Insights;
 
 import com.github.javafaker.Faker;
+import com.shaft.gui.element.ElementActions;
 import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -26,8 +27,8 @@ public class F_Create_Report extends SI_Test_Base {
         reportObj.Z2D_Email_Report();
         reportObj.Z2D_Enter_Email(Email);
         reportObj.Z2D_Submit_Email();
+        ElementActions.waitForElementToBePresent(driver, reportObj.verify_Msg, 10, true);
         Assert.assertTrue(driver.findElement(reportObj.verify_Msg).isDisplayed());
-
     }
 }
 
