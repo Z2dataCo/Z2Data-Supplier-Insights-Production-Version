@@ -23,7 +23,8 @@ public class SI_Test_Base {
     public static WebDriver driver;
     @BeforeSuite
     public void StartDriver() {
-        driver = BrowserFactory.getBrowser(BrowserFactory.BrowserType.GOOGLE_CHROME,new ChromeOptions().addArguments("--headless"));
+        driver = BrowserFactory.getBrowser(BrowserFactory.BrowserType.GOOGLE_CHROME);
+        //new ChromeOptions().addArguments("--headless")
         BrowserActions.navigateToURL(driver, "https://suppliers.z2data.com/");
         login();
     }

@@ -29,22 +29,22 @@ public class Advanced_Search_Page {
 
 
     public void Z2D_Select_Supp1() {
-        ElementActions.waitForElementToBePresent(driver,Supp1,5,true);
+        ElementActions.waitForElementToBePresent(driver,Supp1,10,true);
         ElementActions.click(driver, Supp1);
     }
 
     public void Z2D_Select_Supp2() {
-        ElementActions.waitForElementToBePresent(driver,Supp2,5,true);
+        ElementActions.waitForElementToBePresent(driver,Supp2,10,true);
         ElementActions.click(driver, Supp2);
     }
 
     public void Z2D_Select_Supp3() {
-        ElementActions.waitForElementToBePresent(driver,Supp3,5,true);
+        ElementActions.waitForElementToBePresent(driver,Supp3,10,true);
         ElementActions.click(driver, Supp3);
     }
 
     public void Z2D_Select_Supp4() {
-        ElementActions.waitForElementToBePresent(driver,Supp4,5,true);
+        ElementActions.waitForElementToBePresent(driver,Supp4,10,true);
         ElementActions.click(driver, Supp4);
     }
 
