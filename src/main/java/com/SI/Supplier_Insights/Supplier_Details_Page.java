@@ -26,7 +26,7 @@ public class Supplier_Details_Page {
     public By Financial_Data = By.xpath("//*[@id=\"CompanyFinancialData\"]/div[1]/div[1]");
 
     public void Z2D_ClickSave() {
-        ElementActions.waitForElementToBePresent(driver,Save,5,true);
+        ElementActions.waitForElementToBePresent(driver,Save,10,true);
         ElementActions.click(driver, Save);
     }
 }

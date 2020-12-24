@@ -27,7 +27,7 @@ public class SI_Test_Base {
     @BeforeSuite
     public void StartDriver() {
         driver = BrowserFactory.getBrowser(BrowserFactory.BrowserType.GOOGLE_CHROME);
-        //new ChromeOptions().addArguments("--headless")
+                //new ChromeOptions().addArguments("--headless"));
         BrowserActions.navigateToURL(driver, "https://suppliers.z2data.com/");
         login();
     }
@@ -96,8 +96,8 @@ public class SI_Test_Base {
 
     public void Switch() {
         ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
-        driver.switchTo().window(tab2.get(0));
-        WaitAllElement();
+        //driver.switchTo().window(tab2.get(0));
+        //WaitAllElement();
         driver.switchTo().window(tab2.get(1));
         WaitAllElement();
         driver.switchTo().window(tab2.get(0));

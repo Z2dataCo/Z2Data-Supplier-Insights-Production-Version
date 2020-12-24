@@ -76,14 +76,17 @@ public class Landing_Page {
     }
 
     public void BackToLanding() {
-        ElementActions.click(driver, Z2D_Logo);
+    driver.get("https://suppliers.z2data.com/DataManagement/List");
+       //ElementActions.click(driver, Z2D_Logo);
     }
+
 
     public void Z2D_Enter_Supplier_Name(String Suppname) {
         ElementActions.type(driver, Search_Input, Suppname);
     }
 
     public void Z2D_Select_Search_Value() {
+        ElementActions.waitForElementToBePresent(driver,Search_Value,5,true);
         ElementActions.click(driver, Search_Value);
     }
 
