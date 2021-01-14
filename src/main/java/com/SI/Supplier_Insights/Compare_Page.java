@@ -56,12 +56,8 @@ public class Compare_Page {
         ElementActions.click(driver, Search_Value4);
     }
 
-    public void Validate_Compare(){
+    public void Switch_Tabs(){
         ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tab2.get(1));
-        ElementActions.waitForElementToBePresent(driver,Table_Header,10,true);
-        Assert.assertTrue(driver.getPageSource().contains("Microsoft Corporation"));
-        Assert.assertTrue(driver.getPageSource().contains("Amazon.com, Inc."));
-        driver.switchTo().window(tab2.get(0));
     }
 }

@@ -1,5 +1,6 @@
 package com.SI.Supplier_Insights;
 
+import com.shaft.gui.element.ElementActions;
 import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -17,14 +18,17 @@ public class S_Search_For_Supplier extends SI_Test_Base {
         advancedSearchPage.Z2D_Select_Strong_Filter();
         advancedSearchPage.Z2D_Select_Supp1();
         advancedSearchPage.Z2D_Select_Supp2();
+        String First_Supplier_Name = driver.findElement(advancedSearchPage.Supp1_Name).getText();
+        String Second_Supplier_Name = driver.findElement(advancedSearchPage.Supp2_Name).getText();
         Assert.assertTrue(driver.findElement(advancedSearchPage.Last_Filter).isDisplayed());
         advancedSearchPage.Z2D_Compare_Advanced_Search();
-        Compare_Obj.Validate_Compare();
+        //Compare_Obj.Switch_Tabs();
+        ElementActions.waitForElementToBePresent(driver,Compare_Obj.Table_Header,10,true);
+        Assert.assertTrue(driver.getPageSource().contains(First_Supplier_Name));
+        Assert.assertTrue(driver.getPageSource().contains(Second_Supplier_Name));
         advancedSearchPage.Z2D_ClickSave();
         Assert.assertTrue(driver.findElement(supplierPage.Verify_Msg).isDisplayed());
         advancedSearchPage.Z2D_Clear_Check_Box();
-
-
     }
 
 }

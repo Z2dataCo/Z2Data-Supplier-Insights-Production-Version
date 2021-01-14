@@ -20,7 +20,7 @@ public class T_Supplier_Search_Multi_Filter extends SI_Test_Base {
         advanced_Search_Page_Obj.Z2D_Select_Supp1();
         advanced_Search_Page_Obj.Z2D_Select_Supp2();
         advanced_Search_Page_Obj.Z2D_Compare_Advanced_Search();
-        Compare_Obj.Validate_Compare();
+        Compare_Obj.Switch_Tabs();
         advanced_Search_Page_Obj.Z2D_ClickSave();
         ElementActions.waitForElementToBePresent(driver,supplierPage.Verify_Msg,5,true);
         Assert.assertTrue(driver.findElement(supplierPage.Verify_Msg).isDisplayed());

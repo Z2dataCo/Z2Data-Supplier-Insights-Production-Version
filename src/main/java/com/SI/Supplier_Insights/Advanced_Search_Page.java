@@ -4,6 +4,8 @@ import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.util.ArrayList;
+
 public class Advanced_Search_Page {
     WebDriver driver;
 
@@ -12,11 +14,13 @@ public class Advanced_Search_Page {
     }
 
     public By Supp1 = By.xpath("//tbody/tr[1]/td[1]/input[1]");
+    public By Supp1_Name = By.xpath("//tbody/tr[1]/td[3]//a");
     public By Supp2 = By.xpath("//tbody/tr[2]/td[1]/input[1]");
+    public By Supp2_Name = By.xpath("//tbody/tr[2]/td[3]//a");
     public By Supp3 = By.xpath("//tbody/tr[3]/td[1]/input[1]");
     public By Supp4 = By.xpath("//tbody/tr[4]/td[1]/input[1]");
     public By Compare_btn = By.xpath("//a[@class='btn btn-outline-z2 float-left mr-03'][2]");
-    public By Save_Btn = By.xpath("//i[@Class='la la-save']");
+    public By Save_Btn = By.xpath("//div[@class='actionbar-left']//a[3]");
     public By ddl_Saved = By.xpath("//a[@data-z2dropdownsmenus='saved-menu']");
     public By Company_Name = By.xpath("//thead/tr[1]/td[1]");
     public By Remove = By.xpath("//i[@Class='fas fa-times mr-03']");
@@ -27,7 +31,6 @@ public class Advanced_Search_Page {
     public By Compare = By.xpath("//i[@class='z2iconfont icon-Compare mr-03']");
     public By Last_Filter = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[1]/table/thead/tr/th[9]");
     public By Selected_Box = By.xpath("//*[@id=\"listchecked\"][@ng-reflect-model='true']");
-
 
     public void Z2D_Select_Supp1() {
         ElementActions.waitForElementToBePresent(driver,Supp1,10,true);
@@ -51,9 +54,13 @@ public class Advanced_Search_Page {
 
     public void Z2D_Compare_Advanced_Search() {
         ElementActions.click(driver, Compare_btn);
+        ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tab2.get(1));
     }
 
     public void Z2D_ClickSave() {
+        ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tab2.get(0));
         ElementActions.click(driver, Save_Btn);
     }
 
