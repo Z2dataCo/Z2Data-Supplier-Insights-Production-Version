@@ -19,8 +19,13 @@ public class T_Supplier_Search_Multi_Filter extends SI_Test_Base {
         advanced_Search_Page_Obj.Z2D_Select_Public_Filter();
         advanced_Search_Page_Obj.Z2D_Select_Supp1();
         advanced_Search_Page_Obj.Z2D_Select_Supp2();
+        String First_Supplier_Name = driver.findElement(advanced_Search_Page_Obj.Supp1_Name).getText();
+        String Second_Supplier_Name = driver.findElement(advanced_Search_Page_Obj.Supp2_Name).getText();
         advanced_Search_Page_Obj.Z2D_Compare_Advanced_Search();
-        Compare_Obj.Switch_Tabs();
+        ElementActions.waitForElementToBePresent(driver,Compare_Obj.Table_Header,10,true);
+        Assert.assertTrue(driver.getPageSource().contains(First_Supplier_Name));
+        Assert.assertTrue(driver.getPageSource().contains(Second_Supplier_Name));
+        //Compare_Obj.Switch_Tabs();
         advanced_Search_Page_Obj.Z2D_ClickSave();
         ElementActions.waitForElementToBePresent(driver,supplierPage.Verify_Msg,5,true);
         Assert.assertTrue(driver.findElement(supplierPage.Verify_Msg).isDisplayed());
