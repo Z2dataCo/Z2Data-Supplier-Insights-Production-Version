@@ -37,7 +37,7 @@ public class Landing_Page {
 
     public void Z2D_Open_Browse_Tab() {
         ElementActions.click(driver, Browse);
-        //ElementActions.click(driver, Browse);
+        ElementActions.click(driver, Browse);
     }
 
     public void Z2D_Open_Advanced_Search_Tab() {
