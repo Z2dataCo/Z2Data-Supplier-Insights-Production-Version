@@ -25,7 +25,7 @@ public class Landing_Page {
     public By Z2D_Logo = By.xpath("/html/body/app-root/parentroute-component/app-z2dataapp/div/div[1]/div[1]/a/img");
     public By Search_Input = By.id("txtMainBarSearch");
     public By Search_Value = By.cssSelector("div[class='z2-searchbox clearfix'] li:nth-child(1) a:nth-child(1)");
-    public By Save_Btn = By.xpath("//*[@id=\"z2page-head-bar\"]/div/button");
+    public By Save_Btn = By.xpath("//body/app-root/parentroute-component/supplier-details-component/div[1]/div[1]/button[1]");
     public By Create_Alert = By.xpath("//body//app-root//div[1]//div[1]//app-create-alert[1]//button[1]");
     public By Verify_MSG = By.xpath("//*[@id=\"toast-container\"]/div/div[2]");
     public By Search_Button = By.id("btnautoSearch");
