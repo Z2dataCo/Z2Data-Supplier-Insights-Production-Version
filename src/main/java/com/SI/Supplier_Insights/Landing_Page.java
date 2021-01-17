@@ -24,7 +24,7 @@ public class Landing_Page {
     public By Send_Ticket = By.xpath("//*[@id=\"dropbg\"]/div/div/div[2]/button");
     public By Z2D_Logo = By.xpath("/html/body/app-root/parentroute-component/app-z2dataapp/div/div[1]/div[1]/a/img");
     public By Search_Input = By.id("txtMainBarSearch");
-    public By Search_Value = By.cssSelector("div[class='z2-searchbox clearfix'] li:nth-child(1) a:nth-child(1)");
+    public By Search_Value = By.xpath("/html/body//parentroute-component//div/div[1]/div[1]/div/div[2]/ul/li[1]");
     public By Save_Btn = By.xpath("//body//supplier-details-component/div[1]/div[1]/button");
     public By Create_Alert = By.xpath("//body//app-root//div[1]//div[1]//app-create-alert[1]//button[1]");
     public By Verify_MSG = By.xpath("//*[@id=\"toast-container\"]/div/div[2]");
@@ -86,6 +86,9 @@ public class Landing_Page {
 
     public void Z2D_Enter_Supplier_Name(String Suppname) {
         ElementActions.type(driver, Search_Input, Suppname);
+        ElementActions.waitForElementToBePresent(driver,Search_Value,5,true);
+        //ElementActions.hover(driver,Search_Value);
+        ElementActions.click(driver,Search_Value);
     }
 
     public void Z2D_Select_Search_Value() {

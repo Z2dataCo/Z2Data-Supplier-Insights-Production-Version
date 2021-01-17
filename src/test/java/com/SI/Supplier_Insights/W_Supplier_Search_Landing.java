@@ -13,8 +13,8 @@ public class W_Supplier_Search_Landing extends SI_Test_Base {
         Landing_Page landing_Page_Obj = new Landing_Page(driver);
         Supplier_Details_Page supplier_Details_Page_Obj = new Supplier_Details_Page(driver);
         landing_Page_Obj.Z2D_Enter_Supplier_Name("Microsoft");
-        landing_Page_Obj.Z2D_Select_Search_Value();
-        Switch_Tabs();
+       // landing_Page_Obj.Z2D_Select_Search_Value();
+       // Switch_Tabs();
         ElementActions.waitForElementToBePresent(driver,landing_Page_Obj.Overall_Score,5,true);
         System.out.println("OverallScore" + driver.findElement(landing_Page_Obj.Overall_Score).getText());
         Assert.assertTrue(driver.findElement(landing_Page_Obj.Save_Btn).isDisplayed());
