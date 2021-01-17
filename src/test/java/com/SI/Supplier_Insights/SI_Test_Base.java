@@ -28,7 +28,8 @@ public class SI_Test_Base {
     public void StartDriver() {
         driver = BrowserFactory.getBrowser(BrowserFactory.BrowserType.GOOGLE_CHROME);
                 //new ChromeOptions().addArguments("--headless"));
-        BrowserActions.navigateToURL(driver, "https://suppliers.z2data.com/");
+        driver.navigate().to("https://suppliers.z2data.com/");
+       // BrowserActions.navigateToURL(driver, "https://suppliers.z2data.com/");
         login();
     }
 
