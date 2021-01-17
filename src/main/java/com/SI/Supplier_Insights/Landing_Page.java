@@ -25,11 +25,12 @@ public class Landing_Page {
     public By Z2D_Logo = By.xpath("/html/body/app-root/parentroute-component/app-z2dataapp/div/div[1]/div[1]/a/img");
     public By Search_Input = By.id("txtMainBarSearch");
     public By Search_Value = By.cssSelector("div[class='z2-searchbox clearfix'] li:nth-child(1) a:nth-child(1)");
-    public By Save_Btn = By.xpath("//body/app-root/parentroute-component/supplier-details-component/div[1]/div[1]/button[1]");
+    public By Save_Btn = By.xpath("//body//supplier-details-component/div[1]/div[1]/button");
     public By Create_Alert = By.xpath("//body//app-root//div[1]//div[1]//app-create-alert[1]//button[1]");
     public By Verify_MSG = By.xpath("//*[@id=\"toast-container\"]/div/div[2]");
     public By Search_Button = By.id("btnautoSearch");
     public By Supplier_Name = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[4]/table/tbody/tr[1]/td[3]");
+    public By Overall_Score = By.xpath("//*[@id=\"CompanySupplierScorecard\"]/div[1]/div[2]/div/div[1]");
 
     public void Z2D_Open_My_Supplier() {
         ElementActions.click(driver, My_Supplier);
@@ -88,7 +89,7 @@ public class Landing_Page {
     }
 
     public void Z2D_Select_Search_Value() {
-        ElementActions.waitForElementToBePresent(driver,Search_Button,5,true);
+        //ElementActions.waitForElementToBePresent(driver,Search_Button,5,true);
         ElementActions.click(driver, Search_Button);
         ElementActions.waitForElementToBePresent(driver, Supplier_Name,5,true);
         ElementActions.click(driver, Supplier_Name);

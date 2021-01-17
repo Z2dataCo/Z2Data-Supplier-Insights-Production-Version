@@ -15,8 +15,9 @@ public class W_Supplier_Search_Landing extends SI_Test_Base {
         landing_Page_Obj.Z2D_Enter_Supplier_Name("Microsoft");
         landing_Page_Obj.Z2D_Select_Search_Value();
         Switch_Tabs();
-       // ElementActions.waitForElementToBePresent(driver,landing_Page_Obj.Save_Btn,10,true);
-       // Assert.assertTrue(driver.findElement(landing_Page_Obj.Save_Btn).isDisplayed());
+        ElementActions.waitForElementToBePresent(driver,landing_Page_Obj.Overall_Score,5,true);
+        System.out.println("OverallScore" + driver.findElement(landing_Page_Obj.Overall_Score).getText());
+        Assert.assertTrue(driver.findElement(landing_Page_Obj.Save_Btn).isDisplayed());
         Assert.assertTrue(driver.findElement(landing_Page_Obj.Create_Alert).isDisplayed());
         Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Supp_Score).isDisplayed());
         Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Contact_Data).isDisplayed());
@@ -30,7 +31,5 @@ public class W_Supplier_Search_Landing extends SI_Test_Base {
         Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Red_Flag).isDisplayed());
         Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Supp_Summary).isDisplayed());
         Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Financial_Data).isDisplayed());
-
-
     }
 }
