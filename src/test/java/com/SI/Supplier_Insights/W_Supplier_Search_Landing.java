@@ -6,8 +6,6 @@ import org.testng.annotations.Test;
 
 public class W_Supplier_Search_Landing extends SI_Test_Base {
 
-
-
     @Test
     @Description("Scenario ID = [SI-9]")
     public void SupplierSearch() {
@@ -15,7 +13,7 @@ public class W_Supplier_Search_Landing extends SI_Test_Base {
         Supplier_Details_Page supplier_Details_Page_Obj = new Supplier_Details_Page(driver);
         landing_Page_Obj.Z2D_Enter_Supplier_Name("Microsoft");
         landing_Page_Obj.Z2D_Select_Search_Value();
-        WaitAllElement();
+        Switch_Tabs();
         Assert.assertTrue(driver.findElement(landing_Page_Obj.Save_Btn).isDisplayed());
         Assert.assertTrue(driver.findElement(landing_Page_Obj.Create_Alert).isDisplayed());
         Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Supp_Score).isDisplayed());
