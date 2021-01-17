@@ -1,5 +1,6 @@
 package com.SI.Supplier_Insights;
 
+import com.shaft.gui.element.ElementActions;
 import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -14,6 +15,7 @@ public class W_Supplier_Search_Landing extends SI_Test_Base {
         landing_Page_Obj.Z2D_Enter_Supplier_Name("Microsoft");
         landing_Page_Obj.Z2D_Select_Search_Value();
         Switch_Tabs();
+        ElementActions.waitForElementToBePresent(driver,landing_Page_Obj.Save_Btn,5,true);
         Assert.assertTrue(driver.findElement(landing_Page_Obj.Save_Btn).isDisplayed());
         Assert.assertTrue(driver.findElement(landing_Page_Obj.Create_Alert).isDisplayed());
         Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Supp_Score).isDisplayed());
