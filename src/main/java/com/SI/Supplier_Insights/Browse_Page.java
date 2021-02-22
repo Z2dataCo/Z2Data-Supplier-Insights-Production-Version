@@ -56,7 +56,8 @@ public class Browse_Page {
         ElementActions.type(driver, Search_Input_Name_Page, value);
     }
     public String is_Matched ( ){
-        return driver.findElement(Search_Result_Name_Page).getText();
+       String Text =   driver.findElement(Search_Result_Name_Page).getText();
+       return Text;
 
     }
 

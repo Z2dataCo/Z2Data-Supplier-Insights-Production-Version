@@ -15,13 +15,9 @@ public class B_My_Supplier  {
         driver = BrowserFactory.getBrowser(BrowserFactory.BrowserType.GOOGLE_CHROME);
         Login_Page Login_Obj = new Login_Page(driver);
         Login_Obj.Navigate_To_URL_for_Navigation();
-    }
-    @Test(priority = 1)
-    @Description  ("TS001 || Login to Z2Data Supplier Insights")
-    public void Login() {
-        Login_Page Login_Obj = new Login_Page(driver);
         Login_Obj.Z2D_SignIn();
     }
+
     @Test(priority = 2)
     @Description  ("TS002 || Check Supplier List")
     public void Z2D_Supplier_List() throws InterruptedException {

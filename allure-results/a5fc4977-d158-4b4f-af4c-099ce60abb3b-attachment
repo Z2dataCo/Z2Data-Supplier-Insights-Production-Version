@@ -1,0 +1,25 @@
+[2021-02-22T15:10:27+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:3102445 Array(0)
+[2021-02-22T15:10:27+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:2622645 "Angular is running in the development mode. Call enableProdMode() to enable the production mode."
+[2021-02-22T15:10:27+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:2814464 "returnUrl on canActivate" "/DataManagement/List"
+[2021-02-22T15:10:31+0200] [FINE] https://login.z2data.com/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DSuppliers_angular_spa_production%26redirect_uri%3Dhttps%253A%252F%252FSuppliers.Z2data.com%252Fauth-callback%26response_type%3Did_token%2520token%26scope%3Dopenid%2520profile%2520email%2520api.read%26state%3D6350a9c05c8a4490a540562b4fec4c94%26nonce%3D7b1869932aa94f2d8c8f646ff04dd71a - [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o
+[2021-02-22T15:10:43+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:3102445 Array(0)
+[2021-02-22T15:10:43+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:2622645 "Angular is running in the development mode. Call enableProdMode() to enable the production mode."
+[2021-02-22T15:10:46+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:3102445 Array(0)
+[2021-02-22T15:10:46+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:2622645 "Angular is running in the development mode. Call enableProdMode() to enable the production mode."
+[2021-02-22T15:10:47+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:3578401 Array(0)
+[2021-02-22T15:10:47+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:3539180 "https://Suppliers.Z2data.com"
+[2021-02-22T15:10:47+0200] [SEVERE] https://suppliers.z2data.com/app-assets/fonts/line-awesome/fonts/line-awesome.woff2?v=1.1. - Failed to load resource: the server responded with a status of 404 (Not Found)
+[2021-02-22T15:10:56+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:2989142 Array(20)
+[2021-02-22T15:11:04+0200] [WARNING] https://www.3m.com/ 108 A parser-blocking, cross site (i.e. different eTLD+1) script, https://js-cdn.dynatrace.com/jstag/16ab023090d/ruxitagent_A2SVdfghjqrux_10187200323152418.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
+[2021-02-22T15:11:04+0200] [WARNING] https://www.3m.com/ 108 A parser-blocking, cross site (i.e. different eTLD+1) script, https://js-cdn.dynatrace.com/jstag/16ab023090d/ruxitagent_A2SVdfghjqrux_10187200323152418.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
+[2021-02-22T15:11:05+0200] [INFO] https://tags.tiqcdn.com/utag/3m/en-us/prod/utag.sync.js 1:1269 "dnb_getData: 403 - ISP match"
+[2021-02-22T15:11:07+0200] [SEVERE] https://www.3m.com/3m_theme_assets/themes/3MTheme/assets/scripts/build/lib-thirdparty/domReady.js?v=3.54.0 - Failed to load resource: the server responded with a status of 403 ()
+[2021-02-22T15:11:07+0200] [SEVERE] https://www.3m.com/3m_theme_assets/themes/3MTheme/assets/scripts/build/polyfills/picturefill.js?v=3.54.0 - Failed to load resource: the server responded with a status of 403 ()
+[2021-02-22T15:11:07+0200] [SEVERE] https://www.3m.com/3m_theme_assets/themes/3MTheme/assets/scripts/build/kungfu/Tealium/TealiumCookie.js?v=3.54.0 - Failed to load resource: the server responded with a status of 403 ()
+[2021-02-22T15:11:07+0200] [SEVERE] https://www.3m.com/3m_theme_assets/themes/3MTheme/assets/scripts/build/require_config.js 0:840 Uncaught Error: Script error for: domReady
+https://requirejs.org/docs/errors.html#scripterror
+[2021-02-22T15:11:07+0200] [SEVERE] https://www.3m.com/3m_theme_assets/themes/3MTheme/assets/scripts/build/require_config.js 0:840 Uncaught Error: Script error for: picturefill1
+https://requirejs.org/docs/errors.html#scripterror
+[2021-02-22T15:11:07+0200] [SEVERE] https://www.3m.com/3m_theme_assets/themes/3MTheme/assets/scripts/build/require_config.js 0:840 Uncaught Error: Script error for: kungfu/Tealium/TealiumCookie
+https://requirejs.org/docs/errors.html#scripterror
+[2021-02-22T15:11:07+0200] [SEVERE] https://www.3m.com/favicon.ico - Failed to load resource: the server responded with a status of 403 ()

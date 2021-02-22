@@ -14,11 +14,6 @@ public class I_Browse_Suppliers_By_Industry {
         driver = BrowserFactory.getBrowser(BrowserFactory.BrowserType.GOOGLE_CHROME);
         Login_Page Login_Obj = new Login_Page(driver);
         Login_Obj.Navigate_To_URL_for_Navigation();
-    }
-    @Test
-    @Description("TS001 || Login to Z2Data Supplier Insights")
-    public void Login() {
-        Login_Page Login_Obj = new Login_Page(driver);
         Login_Obj.Z2D_SignIn();
     }
 
