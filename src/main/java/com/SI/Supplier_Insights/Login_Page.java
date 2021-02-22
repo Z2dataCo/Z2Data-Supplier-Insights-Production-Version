@@ -5,17 +5,21 @@ import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.util.concurrent.TimeUnit;
+
 
 public class Login_Page {
     private final WebDriver driver;
-    public String URL_for_Navigation = "https://si.z2data.com";
+    public String URL_for_Navigation = "https://suppliers.z2data.com/";
 
     public Login_Page(WebDriver driver) {
         this.driver = driver;
     }
 
     public void Navigate_To_URL_for_Navigation() {
+        driver.manage().timeouts().pageLoadTimeout(150, TimeUnit.SECONDS);
         driver.navigate().to(URL_for_Navigation);
+        //BrowserActions.navigateToURL(driver,URL_for_Navigation);
     }
 
     public void Tear_Down() {

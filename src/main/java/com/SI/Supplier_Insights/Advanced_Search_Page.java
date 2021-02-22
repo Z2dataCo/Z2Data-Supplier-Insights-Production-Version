@@ -3,6 +3,7 @@ package com.SI.Supplier_Insights;
 import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 
@@ -32,6 +33,18 @@ public class Advanced_Search_Page {
     public By Last_Filter = By.xpath("//*[@id=\"z2tableA-contain\"]/div/div[1]/table/thead/tr/th[9]");
     public By Selected_Box = By.xpath("//*[@id=\"listchecked\"][@ng-reflect-model='true']");
 
+    public void Switch_Tabs() {
+        ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tab2.get(0));
+        driver.close();
+        driver.switchTo().window(tab2.get(1));
+    }
+    public void Switch_Back() {
+        ArrayList<String> tab2 = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tab2.get(1));
+        driver.close();
+        driver.switchTo().window(tab2.get(0));
+    }
     public void Z2D_Select_Supp1() {
         ElementActions.waitForElementToBePresent(driver,Supp1,10,true);
         ElementActions.click(driver, Supp1);

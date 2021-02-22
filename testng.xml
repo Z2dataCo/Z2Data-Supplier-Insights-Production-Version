@@ -39,12 +39,12 @@
                     <include name="Search"/>
                 </methods>
             </class>
-            <class name="com.SI.Supplier_Insights.H_Browse_By_Product_Page">
+            <class name="com.SI.Supplier_Insights.H_Browse_Suppliers_By_Product">
                 <methods>
                     <include name="Search_By_Product"/>
                 </methods>
             </class>
-            <class name="com.SI.Supplier_Insights.I_Browse_By_Industry_Page">
+            <class name="com.SI.Supplier_Insights.I_Browse_Suppliers_By_Industry">
                 <methods>
                     <include name="Browse_By_Industry"/>
                 </methods>

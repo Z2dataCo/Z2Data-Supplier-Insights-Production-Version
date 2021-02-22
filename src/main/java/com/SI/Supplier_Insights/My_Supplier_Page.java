@@ -34,8 +34,9 @@ public class My_Supplier_Page {
         }
     }
 
-    public void Z2D_Open_Supplier_List() {
-        ElementActions.click(driver, Supplier_List);
+    public void Z2D_Open_Supplier_List(WebDriver driver) throws InterruptedException {
+        ElementActions.click(this.driver, Supplier_List);
+        Thread.sleep(200);
     }
 
     public void Z2D_Open_Dashboard_Tab() {
