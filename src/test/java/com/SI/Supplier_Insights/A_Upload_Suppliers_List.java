@@ -17,12 +17,14 @@ public class A_Upload_Suppliers_List  {
         Login_Page Login_Obj = new Login_Page(driver);
         Login_Obj.Navigate_To_URL_for_Navigation();
     }
-    @Test(description = "TS001 || Login to Z2Data Supplier Insights", priority = 1)
+    @Test
+    @Description("TS001 || Login to Z2Data Supplier Insights")
     public void Login() {
         Login_Page Login_Obj = new Login_Page(driver);
         Login_Obj.Z2D_SignIn();
     }
-    @Test(description = "TS002 || Upload Suppliers List", enabled = false)
+    @Test(enabled = false , priority = 1)
+    @Description("TS002 || Upload Suppliers List")
     public void Upload_Suppliers_List() throws AWTException {
         Landing_Page landing_page_Obj = new Landing_Page(driver);
 

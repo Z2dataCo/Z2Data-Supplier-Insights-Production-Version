@@ -17,17 +17,18 @@ public class P_Save_Supplier_Profile {
         Login_Page Login_Obj = new Login_Page(driver);
         Login_Obj.Navigate_To_URL_for_Navigation();
     }
-    @Test(description = "TS001 || Login to Z2Data Supplier Insights", priority = 1)
+    @Test
+    @Description("TS001 || Login to Z2Data Supplier Insights")
     public void Login() {
         Login_Page Login_Obj = new Login_Page(driver);
         Login_Obj.Z2D_SignIn();
     }
-    @Test
+    @Test(priority = 1)
     @Description("Scenario ID = [SI-21]")
     public void SaveProfile() throws InterruptedException {
         My_Supplier_Page mySupplierPage = new My_Supplier_Page(driver);
         Supplier_Page Supplier_Page_Obj = new Supplier_Page(driver);
-        mySupplierPage.Z2D_Open_Supplier_List(driver);
+        mySupplierPage.Z2D_Open_Supplier_List();
         mySupplierPage.Z2D_OpenSupplierTap();
         Supplier_Page_Obj.Z2D_Select_Supp1();
         Supplier_Page_Obj.Z2D_Select_Supp2();

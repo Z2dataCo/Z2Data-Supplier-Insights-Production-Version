@@ -18,13 +18,14 @@ public class U_Suppliers_Details {
         Login_Page Login_Obj = new Login_Page(driver);
         Login_Obj.Navigate_To_URL_for_Navigation();
     }
-    @Test(description = "TS001 || Login to Z2Data Supplier Insights", priority = 1)
+    @Test
+    @Description("TS001 || Login to Z2Data Supplier Insights")
     public void Login() {
         Login_Page Login_Obj = new Login_Page(driver);
         Login_Obj.Z2D_SignIn();
     }
     //Bugy : items is not added in Saved List
-    @Test(enabled = false)
+    @Test(enabled = false , priority = 1)
     @Description("Scenario ID = [SI-23]")
     public void Validate_SupplierDetails() {
         Landing_Page landing_Page_Obj = new Landing_Page(driver);

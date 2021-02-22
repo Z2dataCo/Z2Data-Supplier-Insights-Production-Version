@@ -28,7 +28,7 @@ public class B_My_Supplier  {
         My_Supplier_Page My_Supplier_Obj = new My_Supplier_Page(driver);
         DataManagement_Pages dataManagement_Obj = new DataManagement_Pages(driver);
 
-        My_Supplier_Obj.Z2D_Open_Supplier_List(driver);
+        My_Supplier_Obj.Z2D_Open_Supplier_List();
         Assert.assertTrue(driver.findElement(dataManagement_Obj.High_Risk).isDisplayed());
         Assert.assertTrue(driver.findElement(dataManagement_Obj.Low_Risk).isDisplayed());
         Assert.assertTrue(driver.findElement(dataManagement_Obj.Medium_Risk).isDisplayed());

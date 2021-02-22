@@ -12,7 +12,7 @@ public class My_Supplier_Page {
         this.driver = driver;
     }
 
-    public By Supplier_List = By.xpath("//*[@id=\"tblSupplierList\"]/tbody/tr[2]/td[1]/div/a");
+    public By Supplier_List = By.xpath("//a[normalize-space()='Hadeer_ Supplier List']");
     public By DashBoard_Tab = By.xpath("//*[@id=\"z2tableA-contain\"]/div[1]/ul/li[1]/a");
     public By Suppliers_Tab = By.linkText("Suppliers");
     public By Alert_Tab = By.linkText("Alerts");
@@ -34,9 +34,8 @@ public class My_Supplier_Page {
         }
     }
 
-    public void Z2D_Open_Supplier_List(WebDriver driver) throws InterruptedException {
-        ElementActions.click(this.driver, Supplier_List);
-        Thread.sleep(200);
+    public void Z2D_Open_Supplier_List() {
+        ElementActions.click(driver, Supplier_List);
     }
 
     public void Z2D_Open_Dashboard_Tab() {

@@ -16,17 +16,18 @@ public class E_Check_Customer_able_Add_Edit {
         Login_Page Login_Obj = new Login_Page(driver);
         Login_Obj.Navigate_To_URL_for_Navigation();
     }
-    @Test(description = "TS001 || Login to Z2Data Supplier Insights", priority = 1)
+    @Test
+    @Description("TS001 || Login to Z2Data Supplier Insights")
     public void Login() {
         Login_Page Login_Obj = new Login_Page(driver);
         Login_Obj.Z2D_SignIn();
     }
-    @Test
+    @Test(priority = 1)
     @Description("Scenario ID = [SI-7]")
     public void Z2D_Customer_authorization() throws InterruptedException {
         My_Supplier_Page My_Supplier_Obj = new My_Supplier_Page(driver);
         DataManagement_Pages dataManagement_Obj = new DataManagement_Pages(driver);
-        My_Supplier_Obj.Z2D_Open_Supplier_List(driver);
+        My_Supplier_Obj.Z2D_Open_Supplier_List();
         My_Supplier_Obj.Z2D_Open_Scrub_Tab();
         int Actual_result = Integer.parseInt(driver.findElement(dataManagement_Obj.Count_Supplier_Table).getText());
         int ExpectedResult = Actual_result;
