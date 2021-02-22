@@ -1,0 +1,17 @@
+[2021-02-22T16:17:52+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:3102445 Array(0)
+[2021-02-22T16:17:52+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:2622645 "Angular is running in the development mode. Call enableProdMode() to enable the production mode."
+[2021-02-22T16:17:52+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:2814464 "returnUrl on canActivate" "/DataManagement/List"
+[2021-02-22T16:17:57+0200] [FINE] https://login.z2data.com/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DSuppliers_angular_spa_production%26redirect_uri%3Dhttps%253A%252F%252FSuppliers.Z2data.com%252Fauth-callback%26response_type%3Did_token%2520token%26scope%3Dopenid%2520profile%2520email%2520api.read%26state%3D72c349339aea427286c4387630cfa9f3%26nonce%3D17b8bf3ad5154fe09e57ecfa69f463a3 - [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o
+[2021-02-22T16:18:11+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:3102445 Array(0)
+[2021-02-22T16:18:11+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:2622645 "Angular is running in the development mode. Call enableProdMode() to enable the production mode."
+[2021-02-22T16:18:14+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:3102445 Array(0)
+[2021-02-22T16:18:14+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:2622645 "Angular is running in the development mode. Call enableProdMode() to enable the production mode."
+[2021-02-22T16:18:14+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:3578401 Array(0)
+[2021-02-22T16:18:14+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:3539180 "https://Suppliers.Z2data.com"
+[2021-02-22T16:18:15+0200] [SEVERE] https://suppliers.z2data.com/app-assets/fonts/line-awesome/fonts/line-awesome.woff2?v=1.1. - Failed to load resource: the server responded with a status of 404 (Not Found)
+[2021-02-22T16:18:15+0200] [INFO] https://suppliers.z2data.com/DataManagement/List - Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://suppliers.z2data.com/app-assets/fonts/line-awesome/fonts/line-awesome.woff?v=1.1.
+[2021-02-22T16:18:39+0200] [SEVERE] https://suppliers.z2data.com/app-assets/fonts/line-awesome/fonts/line-awesome.woff2?v=1.1. - Failed to load resource: the server responded with a status of 404 (Not Found)
+[2021-02-22T16:18:40+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:3102445 Array(0)
+[2021-02-22T16:18:40+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:2622645 "Angular is running in the development mode. Call enableProdMode() to enable the production mode."
+[2021-02-22T16:18:40+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:3578401 Array(0)
+[2021-02-22T16:18:40+0200] [INFO] https://suppliers.z2data.com/main.37b764ca7f92a5cf7a9f.js 0:3539180 "https://Suppliers.Z2data.com"
