@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class Q_Submit_Ticket {
     private WebDriver driver;
-    @BeforeClass(alwaysRun = true)
+    @BeforeClass(alwaysRun = true,enabled = false)
     public void initialize_Global_Objects_and_Navigate() {
         driver = BrowserFactory.getBrowser(BrowserFactory.BrowserType.GOOGLE_CHROME);
         Login_Page Login_Obj = new Login_Page(driver);
@@ -18,7 +18,7 @@ public class Q_Submit_Ticket {
         Login_Obj.Z2D_SignIn();
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1,enabled = false)
     @Description("Scenario ID = [SI-3]")
     public void SubmitTicket() {
         Landing_Page landing_Page_Obj = new Landing_Page(driver);
@@ -28,7 +28,7 @@ public class Q_Submit_Ticket {
         landing_Page_Obj.Z2D_Send_Ticket();
         Assert.assertTrue(driver.findElement(landing_Page_Obj.Verify_MSG).isDisplayed());
     }
-    @AfterClass(alwaysRun = true)
+    @AfterClass(alwaysRun = true , enabled = false)
     public void TearDown() {
         Login_Page Login_Obj = new Login_Page(driver);
         Login_Obj.Tear_Down();
