@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class Q_Submit_Ticket extends SI_Test_Base {
 
-    @Test
+    @Test(enabled = false)
     @Description("Scenario ID = [SI-3]")
     public void SubmitTicket() {
         Landing_Page landing_Page_Obj = new Landing_Page(driver);
