@@ -14,7 +14,7 @@ public class Browse_By_Name_Page {
         this.driver = driver;
     }
 
-    public By Search_Input = By.xpath("//input[@placeholder='Search For Supplier']");
+    public By Search_Input = By.xpath("//input[@placeholder='Search For Supplier..']");
     public By Search_Btn = By.xpath("//a[@Class='input-group-text btn btn-info white']");
     public By Link_For_Supplier = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/tbody/tr[1]/td[2]/a");
     public By Supplier_Type_Tbl = By.xpath("//*[@id=\"browse_name\"]/div[3]/table/thead/tr/th[3]");

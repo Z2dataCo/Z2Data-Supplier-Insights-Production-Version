@@ -12,12 +12,12 @@ public class Report_Page {
     }
 
     public By Basic_Info = By.xpath("//label[@for='chkCat_0']");
-    public By Save_Report = By.xpath("//button[@class='z2actionbtnA z2actionbtnleft mr-05'][1]");
+    public By Save_Report = By.xpath("//div[@id='report_list']//button[normalize-space()='Save Report']");
     public By Report_Input = By.xpath("//input[@placeholder='Report Name.']");
     public By Submit_Report = By.xpath("/html/body/ngb-modal-window/div/div/div/div/div[2]/button");
-    public By Email_Report = By.xpath("//button[@Class='z2actionbtnA z2actionbtnleft mr-05'][2]");
+    public By Email_Report = By.xpath("//div[@id='report_list']//button[normalize-space()='Email Report']");
     public By Email_Input = By.xpath("//input[@placeholder='Email..']");
-    public By Send_Email = By.xpath("/html/body/ngb-modal-window/div/div/div/div/div[2]/button");
+    public By Send_Email = By.xpath("//button[normalize-space()='Send Eamil']");
     public By verify_Msg = By.xpath("//div[@class='toast-message ng-star-inserted']");
 
     public void Z2D_Click_BasicInfo() {

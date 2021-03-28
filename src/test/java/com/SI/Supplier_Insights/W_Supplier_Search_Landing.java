@@ -19,7 +19,7 @@ public class W_Supplier_Search_Landing extends SI_Test_Base {
         System.out.println("OverallScore" + driver.findElement(landing_Page_Obj.Overall_Score).getText());
         Assert.assertTrue(driver.findElement(landing_Page_Obj.Save_Btn).isDisplayed());
         Assert.assertTrue(driver.findElement(landing_Page_Obj.Create_Alert).isDisplayed());
-        Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Supp_Score).isDisplayed());
+        //Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Supp_Score).isDisplayed());
         Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Contact_Data).isDisplayed());
         Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Top_Customer).isDisplayed());
         Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Top_Supplier).isDisplayed());
@@ -27,7 +27,7 @@ public class W_Supplier_Search_Landing extends SI_Test_Base {
         Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Financial_Matrix).isDisplayed());
         Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Top_Partner).isDisplayed());
         Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.location).isDisplayed());
-        Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Latest_News).isDisplayed());
+        //Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Latest_News).isDisplayed());
         Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Red_Flag).isDisplayed());
         Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Supp_Summary).isDisplayed());
         Assert.assertTrue(driver.findElement(supplier_Details_Page_Obj.Financial_Data).isDisplayed());

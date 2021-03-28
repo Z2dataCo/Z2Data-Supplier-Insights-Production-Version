@@ -27,8 +27,8 @@ public class S_Search_For_Supplier extends SI_Test_Base {
         Assert.assertTrue(driver.getPageSource().contains(First_Supplier_Name));
         Assert.assertTrue(driver.getPageSource().contains(Second_Supplier_Name));
         advancedSearchPage.Z2D_ClickSave();
+        ElementActions.waitForElementToBePresent(driver,supplierPage.Verify_Msg,5,true);
         Assert.assertTrue(driver.findElement(supplierPage.Verify_Msg).isDisplayed());
         advancedSearchPage.Z2D_Clear_Check_Box();
     }
-
 }

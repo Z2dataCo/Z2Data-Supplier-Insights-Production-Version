@@ -16,7 +16,7 @@ public class G_Browse_Suppliers_By_Name extends SI_Test_Base {
         landing_page_Obj.Z2D_Open_Browse_Tab();
         landing_page_Obj.Z2D_Browse_By_Name();
         browse_ByName_Obj.Z2D_Supplier_Search("3M");
-        browse_ByName_Obj.Z2D_Click_Search();
+       // browse_ByName_Obj.Z2D_Click_Search();
         ElementActions.waitForElementToBePresent(driver,browse_ByName_Obj.Supplier_Type_Tbl,10,true);
         Assert.assertTrue(driver.findElement(browse_ByName_Obj.Supplier_Type_Tbl).isDisplayed());
         Assert.assertTrue(driver.findElement(browse_ByName_Obj.Total_Revenue_Tbl).isDisplayed());

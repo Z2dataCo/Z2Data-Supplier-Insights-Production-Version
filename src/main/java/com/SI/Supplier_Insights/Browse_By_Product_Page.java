@@ -12,10 +12,10 @@ public class Browse_By_Product_Page {
     }
 
     public By Search_Input = By.xpath("//input[@placeholder='Search within Products']");
-    public By Chemicals_Arrow = By.xpath("//*[@id=\"z2-2cols\"]/div/div[2]/div[2]/div/div/div[2]/ul/tree-root/tree-viewport/div/div/tree-node-collection/div/tree-node[1]/div/tree-node-wrapper/div/tree-node-expander/span");
-    public By Diversifed_Chemicals = By.xpath("//*[@id=\"z2-2cols\"]/div/div[2]/div[2]/div/div/div[2]/ul/tree-root/tree-viewport/div/div/tree-node-collection/div/tree-node[1]/div/tree-node-children/div/tree-node-collection/div/tree-node[2]/div/tree-node-wrapper/div/div/tree-node-content/a");
+    public By Chemicals_Arrow = By.xpath("//tree-node[1]//tree-node-wrapper[1]//tree-node-expander[1]");
+    public By Diversified_Chemicals = By.xpath("//span[normalize-space()='Diversified Chemicals']");
     public By Checkbox = By.xpath("//tbody/tr[1]/td[1]/input[1]");
-    public By Save_Search = By.xpath("//a[@class='btn btn-outline-z2 float-left mr-03'][3]");
+    public By Save_Search = By.xpath("//a[@class='btn btn-outline-z2 float-left mr-03'][normalize-space()='Save']");
     public By Verify_Msg =By.xpath("//div[@aria-label='Suppliers Added Successfuly']");
 
 
@@ -28,7 +28,7 @@ public class Browse_By_Product_Page {
     }
 
     public void Select_Product(){
-        ElementActions.click(driver, Diversifed_Chemicals);
+        ElementActions.click(driver, Diversified_Chemicals);
     }
 
     public void Select_Supplier(){

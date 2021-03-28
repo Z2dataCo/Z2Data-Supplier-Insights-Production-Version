@@ -23,7 +23,7 @@ public class Landing_Page {
     public By issue_Area = By.xpath("//*[@id=\"dropbg\"]/div/div/div[2]/div[3]/div[2]/textarea");
     public By Send_Ticket = By.xpath("//*[@id=\"dropbg\"]/div/div/div[2]/button");
     public By Z2D_Logo = By.xpath("/html/body/app-root/parentroute-component/app-z2dataapp/div/div[1]/div[1]/a/img");
-    public By Search_Input = By.id("txtMainBarSearch");
+    public By Search_Input = By.xpath("//input[@id='txtMainBarSearch']");
     public By Search_Value = By.xpath("/html/body//parentroute-component//div/div[1]/div[1]/div/div[2]/ul/li[1]");
     public By Save_Btn = By.xpath("//body//supplier-details-component/div[1]/div[1]/button");
     public By Create_Alert = By.xpath("//body//app-root//div[1]//div[1]//app-create-alert[1]//button[1]");

@@ -29,8 +29,8 @@ public class Login_Page {
     public By SignIn_Btn = By.name("button");
 
     public void Z2D_SignIn() {
-        ElementActions.type(driver, Input_Text_Box, "m.sultan@z2data.com");
-        ElementActions.type(driver, Input_Pass, "M.sultan@z2data.com");
+        ElementActions.type(driver, Input_Text_Box, "a.alzayat@z2data.com");
+        ElementActions.type(driver, Input_Pass, "P@ssw0rd");
         ElementActions.click(driver, SignIn_Btn);
     }
 }

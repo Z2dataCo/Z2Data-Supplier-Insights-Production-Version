@@ -21,9 +21,9 @@ public class Supplier_Details_Page {
     public By location = By.xpath("//*[@id=\"CompanyTopLocations\"]/div/div[1]");
     public By Latest_News = By.xpath("//*[@id=\"CompanyLatestNews\"]/div[1]/div[1]");
     public By Supp_Score = By.xpath("//*[@id=\"CompanySupplierScorecard\"]/div[1]");
-    public By Red_Flag = By.xpath("//*[@id=\"z2-2cols-sub-2cols-left\"]/app-company-latest-red-flags/div/div[1]/div[1]");
-    public By Supp_Summary = By.xpath("//*[@id=\"CompanySupplierScorecard\"]/div[1]/div");
-    public By Financial_Data = By.xpath("//*[@id=\"CompanyFinancialData\"]/div[1]/div[1]");
+    public By Red_Flag = By.xpath("//div[@class='z2-boxstyle1-header-left black']");
+    public By Supp_Summary = By.xpath("//div[contains(text(),'Supplier Summary')]");
+    public By Financial_Data = By.xpath("//div[contains(text(),'Financial Data')]");
 
     public void Z2D_ClickSave() {
         ElementActions.waitForElementToBePresent(driver,Save,20,true);
