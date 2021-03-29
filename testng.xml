@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="5"
-          name="D:/IdeaProjects/Supplier-Insights/src/test/java/com/SI/Supplier_Insights">
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaProjects/Z2Data-Supplier-Insights-Production-Version/src/test/java/com/SI/Supplier_Insights">
         <classes>
             <class name="com.SI.Supplier_Insights.A_Upload_Suppliers_List">
                 <methods>
